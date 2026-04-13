@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,31 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,800&display=swap" rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,800&display=swap"
+            rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- ==========================================
-     HEADER FISSO BLU (site-header)
-     ========================================== -->
+ HEADER FISSO BLU (site-header)
+ ========================================== -->
 <header class="site-header">
     <div class="header-top">
         <div class="header-left">
             <button type="button" class="icon-btn" aria-label="Cerca nel sito">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"
+                     aria-hidden="true">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
             </button>
             <button type="button" class="icon-btn" aria-label="Apri menu principale">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5"
+                     aria-hidden="true">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -36,7 +42,14 @@
 
         <div class="header-center">
             <a href="#" aria-label="Torna alla Homepage" class="logo-link">
-                <img src="https://placehold.co/280x38/162b75/ffffff?text=175+LOREM+IPSUM&font=Montserrat" alt="Logo 175 Lorem Ipsum" width="280" height="38">
+                <div class="logo-container" style="display: flex; align-items: center; gap: 8px;">
+                        <span class="logo-badge" style="order: -1;">
+                            <span class="badge-text" style="font-size: 0.9rem;">175</span>
+                            <span class="badge-sub" style="font-size: 0.5rem;">YEARS</span>
+                        </span>
+                    <span class="logo-shaw" style="font-size: 2.2rem; font-weight: 900;">SHAW</span>
+                    <span class="logo-local" style="font-size: 2.2rem; font-weight: 400;">LOCAL</span>
+                </div>
             </a>
 
             <div class="header-select-wrapper">
@@ -51,9 +64,12 @@
 
         <div class="header-right">
             <button type="button" class="btn-subscribe">Subscribe</button>
-            <button type="button" class="icon-btn" aria-label="Profilo Utente">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+            <button type="button" class="btn-signin" aria-label="Sign in">
+                <span>Sign in</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                    <path
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+                    </path>
                 </svg>
             </button>
         </div>
@@ -61,29 +77,37 @@
 </header>
 
 <!-- ==========================================
-     NAVBAR BIANCA
-     ========================================== -->
+ NAVBAR BIANCA
+ ========================================== -->
 <nav class="main-navigation" aria-label="Menu di Categoria">
     <ul class="nav-list">
-        <li><a href="#" class="nav-link">Ipsum 1</a></li>
+        <li><a href="#" class="nav-link">ipsum 1</a></li>
         <li class="separator" aria-hidden="true">•</li>
-        <li><a href="#" class="nav-link">Ipsum 2</a></li>
+        <li><a href="#" class="nav-link">ipsum 2</a></li>
         <li class="separator" aria-hidden="true">•</li>
-        <li><a href="#" class="nav-link">Ipsum 3</a></li>
+        <li><a href="#" class="nav-link">ipsum 3</a></li>
         <li class="separator" aria-hidden="true">•</li>
-        <li><a href="#" class="nav-link">Ipsum 4</a></li>
+        <li><a href="#" class="nav-link">ipsum 4</a></li>
         <li class="separator" aria-hidden="true">•</li>
-        <li><a href="#" class="nav-link">Ipsum 5</a></li>
+        <li><a href="#" class="nav-link">ipsum 5</a></li>
         <li class="separator" aria-hidden="true">•</li>
-        <li><a href="#" class="nav-link">Ipsum 6</a></li>
+        <li><a href="#" class="nav-link">ipsum 6</a></li>
         <li class="separator" aria-hidden="true">•</li>
-        <li><a href="#" class="nav-link">Ipsum 7</a></li>
+        <li><a href="#" class="nav-link">ipsum 7</a></li>
     </ul>
 </nav>
 
+<!-- BANNER PUBBLICITARIO ORIZZONTALE -->
+<div class="top-ad-banner" style="text-align: center; max-width: 1200px; margin: 0 auto; width: 100%;">
+    <a href="#" aria-label="Banner Pubblicitario Heroes">
+        <img src="https://placehold.co/1200x120/e6d09f/0f0d0d?text=Heroes" alt="Heroes" width="1200" height="120"
+             style="display: block; width: 100%; height: auto;">
+    </a>
+</div>
+
 <!-- ==========================================
-     CONTENUTO PRINCIPALE (Griglia a 3 Colonne)
-     ========================================== -->
+ CONTENUTO PRINCIPALE (Griglia a 3 Colonne)
+ ========================================== -->
 <main class="main-content" id="main-content">
     <h1 class="sr-only">Notizie Locali e Aggiornamenti</h1>
 
@@ -94,40 +118,40 @@
             <h2 class="section-title">Latest</h2>
             <div class="latest-news">
                 <article class="latest-item">
-                    <time datetime="2026-03-28T08:00">8h</time>
+                    <time datetime="2026-04-12T08:00">2h</time>
                     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                 </article>
                 <article class="latest-item">
-                    <time datetime="2026-03-28T12:00">12h</time>
+                    <time datetime="2026-04-12T07:00">3h</time>
                     <h3>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
                 </article>
                 <article class="latest-item">
-                    <time datetime="2026-03-28T15:00">15h</time>
-                    <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                    <time datetime="2026-04-12T06:00">4h</time>
+                    <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h3>
                 </article>
                 <article class="latest-item">
-                    <time datetime="2026-03-28T16:00">16h</time>
+                    <time datetime="2026-04-11T20:00">12h</time>
                     <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</h3>
                 </article>
                 <article class="latest-item">
-                    <time datetime="2026-03-28T18:00">18h</time>
+                    <time datetime="2026-04-11T18:00">14h</time>
                     <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</h3>
                 </article>
                 <article class="latest-item">
-                    <time datetime="2026-03-28T19:00">19h</time>
-                    <h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit</h3>
+                    <time datetime="2026-04-10T12:00">1d</time>
+                    <h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</h3>
                 </article>
                 <article class="latest-item">
-                    <time datetime="2026-03-28T20:00">20h</time>
+                    <time datetime="2026-04-09T10:00">2d</time>
                     <h3>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</h3>
                 </article>
                 <article class="latest-item">
-                    <time datetime="2026-03-28T21:00">21h</time>
-                    <h3>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse</h3>
+                    <time datetime="2026-04-08T09:00">3d</time>
+                    <h3>Consectetur, adipisci velit, sed quia non numquam eius modi tempora</h3>
                 </article>
                 <article class="latest-item">
-                    <time datetime="2026-03-28T23:00">23h</time>
-                    <h3>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</h3>
+                    <time datetime="2026-04-07T08:00">4d</time>
+                    <h3>Incidunt ut labore et dolore magnam aliquam quaerat voluptatem</h3>
                 </article>
             </div>
 
@@ -135,14 +159,16 @@
             <div class="sponsored-news">
                 <article class="sponsored-item">
                     <figure class="sponsored-figure">
-                        <img src="https://placehold.co/300x200" alt="Immagine sponsorizzata del primo prodotto" width="300" height="200">
+                        <img src="https://placehold.co/300x200" alt="Immagine sponsorizzata del primo prodotto"
+                             width="300" height="200">
                         <span class="sponsored-badge">SPONSORED</span>
                     </figure>
                     <h3>Maiores alias consequatur aut perferendis doloribus asperiores</h3>
                 </article>
                 <article class="sponsored-item">
                     <figure class="sponsored-figure">
-                        <img src="https://placehold.co/300x200" alt="Immagine sponsorizzata del secondo prodotto" width="300" height="200">
+                        <img src="https://placehold.co/300x200" alt="Immagine sponsorizzata del secondo prodotto"
+                             width="300" height="200">
                         <span class="sponsored-badge">SPONSORED</span>
                     </figure>
                     <h3>Temporibus autem quibusdam et aut officiis debitis aut rerum</h3>
@@ -154,11 +180,16 @@
         <section class="col-center" aria-label="Articoli Principali">
             <article class="hero-article">
                 <figure>
-                    <img src="https://placehold.co/605x454" alt="Immagine principale dell'articolo in primo piano" width="605" height="454">
+                    <img src="https://placehold.co/605x454/222/fff?text=Suburban+Life+Hero"
+                         alt="Immagine principale dell'articolo in primo piano" width="605" height="454">
                 </figure>
-                <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</h2>
-                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <p class="author">By <span>John Doe</span></p>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
+                </h2>
+                <p class="excerpt">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <p class="author">By <span>Lorem Ipsum</span></p>
             </article>
 
             <div class="top-stories-header">
@@ -168,28 +199,33 @@
             <div class="top-stories-list">
                 <article class="list-article">
                     <div class="article-text">
-                        <h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</h3>
-                        <p class="author">By <span>Jane Smith</span> - Daily Ipsum Media Group</p>
+                        <h3>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+                        <p class="author">By <span>Pellentesque Habitant</span> - Shaw Local Ipsum Network</p>
                     </div>
                     <figure class="article-thumb">
-                        <img src="https://placehold.co/271x152" alt="Miniatura del primo articolo" width="271" height="152">
+                        <img src="https://placehold.co/271x152/444/fff?text=Data+Centers"
+                             alt="Miniatura del primo articolo" width="271" height="152">
                     </figure>
                 </article>
 
                 <article class="list-article">
                     <div class="article-text">
-                        <h3>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</h3>
-                        <p class="author">By <span>Mark Johnson</span></p>
+                        <h3>Quis autem vel eum iure reprehenderit qui in ea voluptate</h3>
+                        <p class="author">By <span>Lorem Ipsum</span></p>
                     </div>
                     <figure class="article-thumb">
-                        <img src="https://placehold.co/271x152" alt="Miniatura del secondo articolo" width="271" height="152">
+                        <img src="https://placehold.co/271x152/333/fff?text=Police+Chase"
+                             alt="Miniatura del secondo articolo" width="271" height="152">
                     </figure>
                 </article>
 
                 <ul class="article-bullets">
-                    <li><a href="#">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</a></li>
-                    <li><a href="#">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae</a></li>
-                    <li><a href="#">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</a></li>
+                    <li><a href="#">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam</a></li>
+                    <li><a href="#">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                        molestiae</a></li>
+                    <li><a href="#">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        praesentium</a></li>
                 </ul>
 
                 <article class="list-article">
@@ -198,7 +234,8 @@
                         <p class="author">By <span>Alice Brown</span> - Daily Ipsum Media Group</p>
                     </div>
                     <figure class="article-thumb">
-                        <img src="https://placehold.co/271x152" alt="Miniatura del terzo articolo" width="271" height="152">
+                        <img src="https://placehold.co/271x152" alt="Miniatura del terzo articolo" width="271"
+                             height="152">
                     </figure>
                 </article>
 
@@ -208,14 +245,18 @@
                         <p class="author">By <span>Mark Johnson</span></p>
                     </div>
                     <figure class="article-thumb">
-                        <img src="https://placehold.co/271x152" alt="Miniatura del quarto articolo" width="271" height="152">
+                        <img src="https://placehold.co/271x152" alt="Miniatura del quarto articolo" width="271"
+                             height="152">
                     </figure>
                 </article>
 
                 <ul class="article-bullets">
-                    <li><a href="#">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</a></li>
-                    <li><a href="#">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit</a></li>
-                    <li><a href="#">Similique sunt in culpa qui officia deserunt mollitia animi id est laborum et dolorum fuga</a></li>
+                    <li><a href="#">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+                        saepe</a></li>
+                    <li><a href="#">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit</a>
+                    </li>
+                    <li><a href="#">Similique sunt in culpa qui officia deserunt mollitia animi id est laborum et
+                        dolorum fuga</a></li>
                 </ul>
             </div>
         </section>
@@ -225,7 +266,8 @@
             <h2 class="sr-only">Pubblicità</h2>
             <div class="ad-container">
                 <figure>
-                    <img src="https://placehold.co/300x500" alt="Banner pubblicitario verticale" width="300" height="500">
+                    <img src="https://placehold.co/300x500" alt="Banner pubblicitario verticale" width="300"
+                         height="500">
                 </figure>
             </div>
         </aside>
@@ -233,20 +275,21 @@
     </div> <!-- Fine Three Col Layout -->
 
     <!-- ==========================================
-         SPAZIATORE PRIMA DELLO SLIDER
-         ========================================== -->
+     SPAZIATORE PRIMA DELLO SLIDER
+     ========================================== -->
     <div style="padding-top: 40px;" aria-hidden="true"></div>
 
     <!-- ==========================================
-         SEZIONE SLIDER EVENTI
-         ========================================== -->
+     SEZIONE SLIDER EVENTI
+     ========================================== -->
     <section class="events-slider-section" aria-labelledby="events-title">
 
         <div class="events-header">
             <h2 id="events-title">Suburban Life Events</h2>
             <div class="events-links">
                 <a href="#" aria-label="Vedi tutti gli eventi">
-                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2">
                         <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                         <line x1="16" y1="2" x2="16" y2="6"></line>
                         <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -265,7 +308,8 @@
 
             <!-- FRECCIA SINISTRA -->
             <button type="button" class="slider-btn prev-btn" aria-label="Scorri eventi precedenti">
-                <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                     stroke-width="2">
                     <polyline points="15 18 9 12 15 6"></polyline>
                 </svg>
             </button>
@@ -277,7 +321,8 @@
                 <article class="event-card highlight">
                     <figure class="thumbnail">
                         <span class="event-date-badge">Dom, Apr 19</span>
-                        <img src="https://placehold.co/300x200/2a2a2a/ffffff?text=Evento+1" alt="Immagine evento 1" width="300" height="200" loading="lazy">
+                        <img src="https://placehold.co/300x200/2a2a2a/ffffff?text=Evento+1" alt="Immagine evento 1"
+                             width="300" height="200" loading="lazy">
                     </figure>
                     <div class="event-info">
                         <h3 class="event-name">Lorem ipsum dolor sit amet: Consectetur</h3>
@@ -289,7 +334,8 @@
                 <article class="event-card">
                     <figure class="thumbnail">
                         <span class="event-date-badge">Lun, Mar 30</span>
-                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+2" alt="Immagine evento 2" width="300" height="200" loading="lazy">
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+2" alt="Immagine evento 2"
+                             width="300" height="200" loading="lazy">
                     </figure>
                     <div class="event-info">
                         <h3 class="event-name">Sed do eiusmod tempor incididunt ut labore</h3>
@@ -301,7 +347,8 @@
                 <article class="event-card">
                     <figure class="thumbnail">
                         <span class="event-date-badge">Lun, Mar 30</span>
-                        <img src="https://placehold.co/300x200/8c8c8c/ffffff?text=Evento+3" alt="Immagine evento 3" width="300" height="200" loading="lazy">
+                        <img src="https://placehold.co/300x200/8c8c8c/ffffff?text=Evento+3" alt="Immagine evento 3"
+                             width="300" height="200" loading="lazy">
                     </figure>
                     <div class="event-info">
                         <h3 class="event-name">Ut enim ad minim veniam quis nostrud</h3>
@@ -313,7 +360,8 @@
                 <article class="event-card">
                     <figure class="thumbnail">
                         <span class="event-date-badge">Lun, Mar 30</span>
-                        <img src="https://placehold.co/300x200/a3a3a3/ffffff?text=Evento+4" alt="Immagine evento 4" width="300" height="200" loading="lazy">
+                        <img src="https://placehold.co/300x200/a3a3a3/ffffff?text=Evento+4" alt="Immagine evento 4"
+                             width="300" height="200" loading="lazy">
                     </figure>
                     <div class="event-info">
                         <h3 class="event-name">Duis aute irure dolor in reprehenderit</h3>
@@ -325,7 +373,8 @@
                 <article class="event-card">
                     <figure class="thumbnail">
                         <span class="event-date-badge">Lun, Mar 30</span>
-                        <img src="https://placehold.co/300x200/cccccc/000000?text=Evento+5" alt="Immagine evento 5" width="300" height="200" loading="lazy">
+                        <img src="https://placehold.co/300x200/cccccc/000000?text=Evento+5" alt="Immagine evento 5"
+                             width="300" height="200" loading="lazy">
                     </figure>
                     <div class="event-info">
                         <h3 class="event-name">Excepteur sint occaecat cupidatat non</h3>
@@ -337,7 +386,8 @@
                 <article class="event-card">
                     <figure class="thumbnail">
                         <span class="event-date-badge">Lun, Mar 30</span>
-                        <img src="https://placehold.co/300x200/8c8c8c/ffffff?text=Evento+6" alt="Immagine evento 6" width="300" height="200" loading="lazy">
+                        <img src="https://placehold.co/300x200/8c8c8c/ffffff?text=Evento+6" alt="Immagine evento 6"
+                             width="300" height="200" loading="lazy">
                     </figure>
                     <div class="event-info">
                         <h3 class="event-name">Sunt in culpa qui officia deserunt mollit</h3>
@@ -349,7 +399,8 @@
                 <article class="event-card">
                     <figure class="thumbnail">
                         <span class="event-date-badge">Lun, Mar 30</span>
-                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+7" alt="Immagine evento 7" width="300" height="200" loading="lazy">
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+7" alt="Immagine evento 7"
+                             width="300" height="200" loading="lazy">
                     </figure>
                     <div class="event-info">
                         <h3 class="event-name">Anim id est laborum perspiciatis unde omnis</h3>
@@ -357,11 +408,181 @@
                     </div>
                 </article>
 
+
+                <!-- Cella 8 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+8" alt="Immagine evento 8"
+                             width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 8 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 8</p>
+                    </div>
+                </article>
+                <!-- Cella 9 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+9" alt="Immagine evento 9"
+                             width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 9 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 9</p>
+                    </div>
+                </article>
+                <!-- Cella 10 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+10"
+                             alt="Immagine evento 10" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 10 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 10</p>
+                    </div>
+                </article>
+                <!-- Cella 11 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+11"
+                             alt="Immagine evento 11" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 11 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 11</p>
+                    </div>
+                </article>
+                <!-- Cella 12 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+12"
+                             alt="Immagine evento 12" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 12 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 12</p>
+                    </div>
+                </article>
+                <!-- Cella 13 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+13"
+                             alt="Immagine evento 13" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 13 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 13</p>
+                    </div>
+                </article>
+                <!-- Cella 14 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+14"
+                             alt="Immagine evento 14" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 14 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 14</p>
+                    </div>
+                </article>
+                <!-- Cella 15 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+15"
+                             alt="Immagine evento 15" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 15 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 15</p>
+                    </div>
+                </article>
+                <!-- Cella 16 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+16"
+                             alt="Immagine evento 16" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 16 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 16</p>
+                    </div>
+                </article>
+                <!-- Cella 17 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+17"
+                             alt="Immagine evento 17" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 17 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 17</p>
+                    </div>
+                </article>
+                <!-- Cella 18 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+18"
+                             alt="Immagine evento 18" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 18 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 18</p>
+                    </div>
+                </article>
+                <!-- Cella 19 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+19"
+                             alt="Immagine evento 19" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 19 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 19</p>
+                    </div>
+                </article>
+                <!-- Cella 20 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+20"
+                             alt="Immagine evento 20" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 20 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 20</p>
+                    </div>
+                </article>
+                <!-- Cella 21 -->
+                <article class="event-card">
+                    <figure class="thumbnail">
+                        <span class="event-date-badge">Lun, Mar 30</span>
+                        <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+21"
+                             alt="Immagine evento 21" width="300" height="200" loading="lazy">
+                    </figure>
+                    <div class="event-info">
+                        <h3 class="event-name">Evento 21 dolor sit amet consectetur</h3>
+                        <p class="event-location">Location 21</p>
+                    </div>
+                </article>
             </div>
 
             <!-- FRECCIA DESTRA -->
             <button type="button" class="slider-btn next-btn" aria-label="Scorri prossimi eventi">
-                <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                     stroke-width="2">
                     <polyline points="9 18 15 12 9 6"></polyline>
                 </svg>
             </button>
@@ -410,20 +631,295 @@
     </section>
 
     <!-- ==========================================
-         SPAZIATORE DOPO LO SLIDER
-         ========================================== -->
+     SPAZIATORE DOPO DELLO SLIDER
+     ========================================== -->
     <div style="padding-top: 40px;" aria-hidden="true"></div>
+
+    <!-- ==========================================
+     CONTENUTO PRINCIPALE INFERIORE (Griglia a 3 Colonne)
+     ========================================== -->
+    <div class="three-col-layout" style="margin-top: 2.5rem;">
+
+        <!-- COLONNA SINISTRA -->
+        <aside class="col-left" aria-label="High School Sports and Friday Night Drive">
+            <h2 class="section-title" style="font-size: 1.95rem; margin-bottom: 1rem;">High School Sports</h2>
+
+            <article class="latest-item" style="margin-bottom: 2rem;">
+                <figure class="hero-article-img" style="margin-bottom: 0.8rem;">
+                    <img src="https://placehold.co/300x200/444/fff?text=Volleyball" alt="Volleyball" width="300"
+                         height="200" loading="lazy" style="width: 100%; height: auto; border-radius: 2px;">
+                </figure>
+                <h3 style="font-size: 1.05rem; line-height: 1.3; font-weight: 600; cursor: pointer;">Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna...</h3>
+            </article>
+
+            <article class="latest-item" style="margin-bottom: 2.5rem;">
+                <figure class="hero-article-img" style="margin-bottom: 0.8rem;">
+                    <img src="https://placehold.co/300x250/efefef/162b75?text=NORTH" alt="NORTH logo" width="300"
+                         height="250" loading="lazy" style="width: 100%; height: auto; border-radius: 2px;">
+                </figure>
+                <h3 style="font-size: 1.05rem; line-height: 1.3; font-weight: 600; cursor: pointer;">Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</h3>
+            </article>
+
+            <h2 class="section-title" style="font-size: 1.95rem; margin-bottom: 1rem;">Friday Night Drive</h2>
+
+            <article class="latest-item" style="margin-bottom: 2rem;">
+                <figure class="hero-article-img" style="margin-bottom: 0.8rem;">
+                    <img src="https://placehold.co/300x200/333/fff?text=Football" alt="Football" width="300"
+                         height="200" loading="lazy" style="width: 100%; height: auto; border-radius: 2px;">
+                </figure>
+                <h3 style="font-size: 1.05rem; line-height: 1.3; font-weight: 600; cursor: pointer;">Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                    excepteur...</h3>
+            </article>
+
+            <article class="latest-item" style="margin-bottom: 2rem;">
+                <figure class="hero-article-img" style="margin-bottom: 0.8rem;">
+                    <img src="https://placehold.co/300x200/222/fff?text=Football+2" alt="Football players"
+                         width="300" height="200" loading="lazy"
+                         style="width: 100%; height: auto; border-radius: 2px;">
+                </figure>
+                <h3 style="font-size: 1.05rem; line-height: 1.3; font-weight: 600; cursor: pointer;">Curabitur
+                    pretium tincidunt lacus nulla gravida orci a odio nullam varius turpis et commodo pharetra</h3>
+            </article>
+        </aside>
+
+        <!-- COLONNA CENTRALE -->
+        <section class="col-center" aria-label="Sports Articles">
+
+            <article class="hero-article" style="margin-bottom: 2rem;">
+                <figure style="margin-bottom: 1rem; display: flex; justify-content: center;">
+                    <img src="https://placehold.co/605x340/555/fff?text=Soccer+Girls" alt="Soccer girls" width="559"
+                         height="314" loading="lazy" height: auto; border-radius: 2px;>
+                </figure>
+                <h2>Lorem ipsum dolor sit
+                    amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore</h2>
+                <p class="author" style="margin-bottom: 1.5rem;">By <span>Lorem Ipsum</span></p>
+
+                <ul class="article-bullets" style="margin-bottom: 2.5rem; padding-left: 1.2rem;">
+                    <li><a href="#">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip</a></li>
+                    <li><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</a>
+                    </li>
+                    <li><a href="#">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia
+                        deserunt</a></li>
+                </ul>
+            </article>
+
+            <article class="hero-article" style="margin-bottom: 2rem;">
+                <figure style="margin-bottom: 1rem;">
+                    <img src="https://placehold.co/605x380/666/fff?text=Football+Red" alt="Football red" width="605"
+                         height="380" loading="lazy">
+                </figure>
+                <h2>Sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud</h2>
+                <p class="author" style="margin-bottom: 1.5rem;">By <span>Lorem Ipsum</span></p>
+
+                <ul class="article-bullets" style="margin-bottom: 2.5rem; padding-left: 1.2rem;">
+                    <li><a href="#">Nam libero tempore cum soluta nobis est eligendi optio cumque nihil</a></li>
+                    <li><a href="#">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus</a>
+                    </li>
+                    <li><a href="#">Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis
+                        voluptatibus</a></li>
+                </ul>
+            </article>
+
+            <article class="hero-article" style="margin-bottom: 2rem;">
+                <figure style="margin-bottom: 1rem;">
+                    <img src="https://placehold.co/605x380/777/fff?text=Football+White" alt="Football white"
+                         width="605" height="380" loading="lazy">
+                </figure>
+                <h2>Excepteur sint occaecat
+                    cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est</h2>
+                <p class="author" style="margin-bottom: 1.5rem;">By <span>Lorem Ipsum</span></p>
+            </article>
+
+        </section>
+
+        <!-- COLONNA DESTRA -->
+        <aside class="col-right" aria-label="Opinion and Advertising">
+
+
+
+            <section class="opinion-section" style="margin-bottom: 2.5rem;">
+                <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Opinion</h2>
+
+                <ul class="article-bullets" style="padding-left: 1.2rem; margin-bottom: 0;">
+                    <li style="margin-bottom: 1.5rem;"><a href="#">Lorem Ipsum: Dolor sit amet consectetur
+                        adipiscing elit sed do eiusmod tempor</a></li>
+                    <li style="margin-bottom: 1.5rem;"><a href="#">Lorem Ipsum: Incididunt ut labore et dolore magna
+                        aliqua ut enim ad minim</a></li>
+                    <li style="margin-bottom: 1.5rem;"><a href="#">Veniam quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo</a></li>
+                    <li style="margin-bottom: 1.5rem;"><a href="#">Lorem Ipsum: Consequat duis aute irure dolor in
+                        reprehenderit in voluptate velit</a></li>
+                    <li style="margin-bottom: 1.5rem;"><a href="#">Ipsum Dolor: Esse cillum dolore eu fugiat nulla
+                        pariatur excepteur sint occaecat</a></li>
+                    <li style="margin-bottom: 1.5rem;"><a href="#">Lorem Ipsum: Cupidatat non proident sunt in culpa
+                        qui officia deserunt mollit</a></li>
+                </ul>
+            </section>
+
+            <div style="margin-bottom: 1.5rem; text-align: center; padding: 0; background: transparent;">
+                <figure style="margin-bottom: 1.5rem;">
+                    <img src="https://placehold.co/300x150/d03333/fff?text=Everyday+Heroes" alt="Everyday Heroes Ad"
+                         width="300" height="150" loading="lazy" style="width: 100%;">
+                </figure>
+                <p
+                        style="font-size: 1.15rem; margin-bottom: 1.5rem; color: #191919; text-align: left; padding-left: 1.2rem; font-weight: 600;">
+                    Enter the DuPage/Cook Counties Everyday Heroes Contest</p>
+                <a href="#" class="widget-btn"
+                   style="display: inline-block; background-color: #162b75; color: #fff; padding: 0.8rem 1.5rem; font-weight: 700; font-size: 0.9rem; text-decoration: none; border-radius: 4px;">View
+                    All Contests Here</a>
+            </div>
+
+            <div class="ad-container" style="margin-top: 2.5rem; position: sticky; top: 90px;">
+                <figure>
+                    <img src="https://placehold.co/300x250/2c3e50/fff?text=Let's+Play+Illinois"
+                         alt="Let's Play Illinois" width="300" height="250" loading="lazy"
+                         style="width: 100%; border-radius: 2px;">
+                </figure>
+            </div>
+
+        </aside>
+
+    </div> <!-- Fine blocco 3 colonne inferiore -->
+
+    <!-- ==========================================
+     SEZIONE NECROLOGI (fuori dalla griglia a 3 colonne)
+     ========================================== -->
+    <section
+            style="text-align: center; margin-top: 4rem; margin-bottom: 2rem; max-width: 1337px; margin-left: auto; margin-right: auto; padding: 0 15px;">
+        <h2 style="font-size: 1.8rem; font-weight: 400; margin-bottom: 1.5rem;">DuPage/Cook Counties Obituaries</h2>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <img src="https://placehold.co/140x180/ccc/333?text=Obituary" alt="Obit 1"
+                 style="border-radius: 4px; cursor: pointer;" onmouseover="this.style.opacity='0.85'"
+                 onmouseout="this.style.opacity='1'">
+            <img src="https://placehold.co/140x180/ccc/333?text=Obituary" alt="Obit 2"
+                 style="border-radius: 4px; cursor: pointer;" onmouseover="this.style.opacity='0.85'"
+                 onmouseout="this.style.opacity='1'">
+            <img src="https://placehold.co/140x180/ccc/333?text=Obituary" alt="Obit 3"
+                 style="border-radius: 4px; cursor: pointer;" onmouseover="this.style.opacity='0.85'"
+                 onmouseout="this.style.opacity='1'">
+            <img src="https://placehold.co/140x180/ccc/333?text=Obituary" alt="Obit 4"
+                 style="border-radius: 4px; cursor: pointer;" onmouseover="this.style.opacity='0.85'"
+                 onmouseout="this.style.opacity='1'">
+        </div>
+    </section>
 
 </main>
 
 <!-- ==========================================
-     FOOTER
-     ========================================== -->
+ FOOTER COMPLETO (4 colonne + social)
+ ========================================== -->
 <footer class="site-footer">
-    <div class="footer-content">
-        <p>&copy; 2026 Progetto Multimediale - Tutti i testi sono fittizi.</p>
+    <div class="footer-main">
+        <div class="footer-grid">
+
+            <!-- Colonna 1: About Us -->
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Jobs at Lorem Media</a></li>
+                    <li><a href="#">Lorem Media Marketing</a></li>
+                    <li><a href="#">Advertise with Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonna 2: Subscriptions -->
+            <div class="footer-col">
+                <h4>Subscriptions</h4>
+                <ul>
+                    <li><a href="#">Subscribe</a></li>
+                    <li><a href="#">Manage your Subscription</a></li>
+                    <li><a href="#">Newsletters</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonna 3: More -->
+            <div class="footer-col">
+                <h4>More on Suburban Life</h4>
+                <ul>
+                    <li><a href="#">Ipsum 7</a></li>
+                    <li><a href="#">Public Notices</a></li>
+                    <li><a href="#">Ipsum 6</a></li>
+                    <li><a href="#">Historical Archive</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonna 4: Mobile App + Follow Us -->
+            <div class="footer-col">
+                <h4>Mobile App</h4>
+                <ul>
+                    <li><a href="#">iOS</a></li>
+                    <li><a href="#">Android</a></li>
+                </ul>
+                <h4 class="follow-title">Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter / X">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                            <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                             stroke-width="2" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                            <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Barra Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 Lorem Ipsum Media Group. Tutti i diritti riservati. I testi sono fittizi.</p>
     </div>
 </footer>
 
+<script>
+    /* ==========================================
+       SLIDER EVENTI – Navigazione con frecce
+       ========================================== */
+    (function () {
+        const track = document.querySelector('.events-track');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        if (!track || !prevBtn || !nextBtn) return;
+
+        prevBtn.addEventListener('click', function () {
+            const scrollAmount = track.clientWidth;
+            track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+        nextBtn.addEventListener('click', function () {
+            const scrollAmount = track.clientWidth;
+            track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+    })();
+</script>
+
 </body>
+
 </html>

@@ -88,6 +88,56 @@ button, select {
 }
 .region-select option { background-color: #ffffff; color: #000000; }
 
+/* -- LOGO BRANDING (SHAW LOCAL + 175) -- */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #ffffff;
+}
+
+.logo-shaw {
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -2px;
+}
+
+.logo-local {
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+.logo-badge {
+    background-color: #d09c37;
+    color: #162b75;
+    padding: 4px 8px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    line-height: 1;
+    transform: rotate(-10deg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.badge-text {
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.badge-sub {
+    font-size: 0.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .icon-btn {
     background: transparent;
     border: none;
@@ -98,10 +148,9 @@ button, select {
     justify-content: center;
     padding: 4px;
     height: 100%;
-    transition: opacity 0.2s ease;
 }
-.icon-btn:hover, .icon-btn:focus-visible { opacity: 0.7; }
 .icon-btn:focus-visible { outline: 2px solid #ffffff; outline-offset: 4px; border-radius: 4px; }
+.icon-btn:hover { background: transparent; opacity: 1; transform: none; box-shadow: none; }
 
 .btn-subscribe {
     background-color: #d09c37;
@@ -119,6 +168,23 @@ button, select {
     transition: background-color 0.1s ease;
 }
 .btn-subscribe:hover, .btn-subscribe:focus-visible { background-color: #b58622; }
+
+.btn-signin {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0 4px;
+    height: 100%;
+    transition: opacity 0.2s ease;
+}
+.btn-signin:hover, .btn-signin:focus-visible { opacity: 0.7; }
+.btn-signin span { line-height: 1; }
 
 .main-navigation {
     display: block;
@@ -145,10 +211,10 @@ button, select {
     color: #191919;
     font-size: 1rem;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: opacity 0.2s ease;
     display: inline-block;
 }
-.nav-link:hover, .nav-link:active, .nav-link:focus-visible { color: #7f7f7f; }
+.nav-link:hover, .nav-link:active, .nav-link:focus-visible { opacity: 0.6; }
 .separator { color: #191919; font-size: 0.8rem; user-select: none; display: flex; align-items: center; }
 
 /* =========================================
@@ -202,7 +268,7 @@ button, select {
     margin-bottom: 1rem;
     object-fit: cover;
 }
-.hero-article h2 { font-size: 2rem; font-weight: 800; line-height: 1.1; color: #000; margin-bottom: 0.8rem; }
+.hero-article h2 { font-size: 2.3rem; font-weight: 800; line-height: 1.1; color: #000; margin-bottom: 0.8rem; }
 .hero-article .excerpt { font-size: 1rem; color: #333; line-height: 1.5; margin-bottom: 0.5rem; }
 
 .author { font-size: 0.8rem; color: #64748b; text-transform: uppercase; }
@@ -212,46 +278,59 @@ button, select {
 .top-stories-header h2 { font-size: 1.6rem; font-weight: 800; color: #000; }
 
 .list-article { display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; }
-.article-text h3 { font-size: 1.3rem; font-weight: 700; line-height: 1.2; color: #000; margin-bottom: 0.5rem; }
+.article-text h3 { font-size: 1.5rem; font-weight: 700; line-height: 1.2; color: #000; margin-bottom: 0.5rem; }
 .article-thumb { flex: 0 0 271px; max-width: 100%; }
 .article-thumb img { width: 100%; height: auto; display: block; aspect-ratio: 271 / 152; object-fit: cover; }
 
 .article-bullets { list-style-type: disc; padding-left: 1.2rem; margin-bottom: 2rem; }
 .article-bullets li { margin-bottom: 1rem; }
-.article-bullets li a { color: #000; text-decoration: none; font-size: 1.1rem; font-weight: 700; line-height: 1.3; }
+.article-bullets li a { color: #000; text-decoration: none; font-size: 1.3rem; font-weight: 700; line-height: 1.3; }
 
-/* --- Effetto Hover SOLO per le immagini nelle 3 colonne (incluso l'AD) --- */
+/* --- Effetto Hover per le immagini (solo opacity) --- */
 .hero-article img,
 .article-thumb img,
 .sponsored-figure img,
-.ad-container img {
+.ad-container img,
+.featured-article img,
+.sidebar-thumb img,
+.gallery-card img,
+.trending-thumb img {
     transition: opacity 0.3s ease;
     cursor: pointer;
+    border-radius: 2px;
 }
 
-/* --- Effetto Hover per Titoli e Link nella Colonna Centrale --- */
-
-.hero-article h2,
-.article-text h3,
-.article-bullets li a {
-    transition: color 0.2s ease, opacity 0.2s ease;
-    cursor: pointer;
-}
-
-/* Effetto molto più marcato */
-.hero-article h2:hover,
-.article-text h3:hover,
-.article-bullets li a:hover {
-    color: #7f7f7f; /* Un grigio medio, visibilmente diverso dal nero */
-    /* In alternativa, se vuoi il blu del sito: color: #162b75; */
-}
-
-/* Quando il mouse passa sopra, l'immagine si schiarisce leggermente */
 .hero-article img:hover,
 .article-thumb img:hover,
 .sponsored-figure img:hover,
-.ad-container img:hover {
-    opacity: 0.85;
+.ad-container img:hover,
+.featured-article img:hover,
+.sidebar-thumb img:hover,
+.gallery-card img:hover,
+.trending-thumb img:hover {
+    opacity: 0.8;
+}
+
+/* --- Effetto Hover per Titoli e Link (solo opacity) --- */
+.hero-article h2,
+.article-text h3,
+.article-bullets li a,
+.featured-article h3,
+.sidebar-article h3,
+.gallery-card h3,
+.trending-item h3 {
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.hero-article h2:hover,
+.article-text h3:hover,
+.article-bullets li a:hover,
+.featured-article h3:hover,
+.sidebar-article h3:hover,
+.gallery-card h3:hover,
+.trending-item h3:hover {
+    opacity: 0.65;
 }
 
 /* =========================================
@@ -429,16 +508,306 @@ button, select {
 .day-number { font-size: 1.25rem; }
 
 /* =========================================
-   FOOTER
+   SEZIONI CONTENUTO (Sports, Opinion, etc.)
+   ========================================= */
+.content-section {
+    width: 100%;
+    max-width: 1337px;
+    margin: 0 auto 2.5rem auto;
+    padding: 0 15px;
+}
+
+.section-header-bar {
+    border-bottom: 3px solid #162b75;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.section-header-bar h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #162b75;
+    margin: 0;
+}
+
+/* -- Layout a 2 colonne (Featured + Sidebar) -- */
+.two-col-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.featured-article { margin-bottom: 2rem; }
+.featured-article figure { margin-bottom: 0.8rem; }
+.featured-article img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+.featured-article img:hover { opacity: 0.85; }
+.featured-article h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #000;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.featured-article h3:hover { opacity: 0.65; }
+
+/* -- Sidebar Articoli (colonna destra delle sezioni) -- */
+.sidebar-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.sidebar-article {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.sidebar-article:first-child { padding-top: 0; }
+.sidebar-article:last-child { border-bottom: none; }
+
+.sidebar-thumb {
+    flex: 0 0 120px;
+    margin: 0;
+}
+.sidebar-thumb img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+.sidebar-thumb img:hover { opacity: 0.85; }
+
+.sidebar-article h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #000;
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.sidebar-article h3:hover { opacity: 0.65; }
+
+.sidebar-article.no-image {
+    padding-left: 0;
+}
+.sidebar-article.no-image h3 {
+    font-size: 0.95rem;
+}
+
+/* =========================================
+   WIDGET ROW (Contest + Obituaries)
+   ========================================= */
+.widgets-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1337px;
+    margin: 0 auto 2.5rem auto;
+    padding: 0 15px;
+}
+
+.widget { background-color: #f5f5f5; padding: 1.5rem; border: 1px solid #e0e0e0; }
+.widget figure { margin: 0 0 1rem 0; }
+.widget figure img { width: 100%; height: auto; display: block; }
+.widget h3 { font-size: 1.4rem; font-weight: 800; color: #000; margin-bottom: 1rem; }
+
+.widget-link {
+    display: inline-block;
+    color: #162b75;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-bottom: 2px solid #162b75;
+    padding-bottom: 2px;
+    transition: opacity 0.2s ease;
+}
+.widget-link:hover { opacity: 0.7; }
+
+.widget-btn {
+    display: inline-block;
+    background-color: #162b75;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+.widget-btn:hover { background-color: #0f1e54; }
+
+/* =========================================
+   PHOTO GALLERIES (griglia)
+   ========================================= */
+.galleries-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+.gallery-card figure { margin: 0 0 0.6rem 0; position: relative; overflow: hidden; }
+.gallery-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: opacity 0.3s ease, transform 0.4s ease;
+    cursor: pointer;
+}
+.gallery-card:hover img { opacity: 0.8; }
+.gallery-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.gallery-card h3:hover { opacity: 0.65; }
+
+/* =========================================
+   TRENDING (lista numerata a 2 colonne)
+   ========================================= */
+.trending-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+.trending-col {
+    display: flex;
+    flex-direction: column;
+}
+.trending-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.trending-item:last-child { border-bottom: none; }
+
+.trending-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #162b75;
+    line-height: 1;
+    flex-shrink: 0;
+    width: 30px;
+    text-align: center;
+}
+.trending-content {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    flex: 1;
+}
+.trending-thumb {
+    flex: 0 0 100px;
+    margin: 0;
+}
+.trending-thumb img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    display: block;
+}
+.trending-item h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #000;
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.trending-item h3:hover { opacity: 0.65; }
+
+/* =========================================
+   FOOTER COMPLETO
    ========================================= */
 .site-footer {
     background-color: #162b75;
     color: #fff;
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
-.footer-content p { font-size: 0.9rem; margin: 0; }
+
+.footer-main {
+    max-width: 1337px;
+    margin: 0 auto;
+    padding: 2.5rem 15px 2rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.footer-col h4 {
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.8rem;
+    color: #fff;
+}
+.footer-col .follow-title {
+    margin-top: 1.5rem;
+}
+
+.footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-col ul li {
+    margin-bottom: 0.5rem;
+}
+.footer-col ul li a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+.footer-col ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.social-icons a {
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+.social-icons a:hover { color: #ffffff; }
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 1rem 15px;
+}
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
 
 /* =========================================
    MEDIA QUERIES GLOBALI
@@ -454,6 +823,41 @@ button, select {
     .col-left { padding-right: 0; position: sticky; top: 90px; height: fit-content; width: 300px; margin-right: 20px; }
     .col-center { padding: 0 30px; border-left: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8; line-height: 27px; }
     .col-right { padding-left: 0; position: sticky; top: 90px; height: fit-content; width: 300px; margin-left: 20px; }
+
+    /* Sezioni a 2 colonne */
+    .two-col-section {
+        grid-template-columns: 1fr 380px;
+        gap: 2rem;
+    }
+
+    /* Widgets affiancati */
+    .widgets-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Gallerie griglia */
+    .galleries-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery-card.large {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+    .gallery-card.large img {
+        height: 100%;
+        aspect-ratio: auto;
+    }
+
+    /* Trending a 2 colonne */
+    .trending-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0 3rem;
+    }
+
+    /* Footer a 4 colonne */
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -461,6 +865,9 @@ button, select {
     .col-right { grid-column: 1 / -1; width: 100%; margin-left: 0; position: static; display: flex; justify-content: center; }
     .col-center { border-right: none; }
     .event-card { flex: 0 0 calc((100% / 4) - 10.5px); }
+
+    .two-col-section { grid-template-columns: 1fr 300px; }
+    .footer-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media screen and (max-width: 767px) {
@@ -479,4 +886,26 @@ button, select {
     .event-card { flex: 0 0 calc((100% / 2) - 7px); }
     .events-header { flex-direction: column; align-items: flex-start; }
     .events-links { width: 100%; justify-content: space-between; }
+
+    /* Sezioni nuove responsive */
+    .featured-article h3 { font-size: 1.2rem; }
+    .sidebar-article { gap: 10px; }
+    .sidebar-thumb { flex: 0 0 90px; }
+    .sidebar-thumb img { width: 90px; height: 60px; }
+
+    .trending-number { font-size: 1.5rem; width: 24px; }
+    .trending-thumb { flex: 0 0 80px; }
+    .trending-thumb img { width: 80px; height: 56px; }
+
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+}
+
+/* Fixes per tre colonne in fondo */
+.three-col-layout .content-section {
+    padding: 0;
+    margin: 0 0 2rem 0;
+    max-width: none;
+}
+.three-col-layout .content-section:last-child {
+    margin-bottom: 0;
 }
