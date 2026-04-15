@@ -1123,7 +1123,7 @@ select {
 }
 
 .obit-card:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .obit-card .obit-img-wrapper {
@@ -1390,10 +1390,12 @@ select {
 .three-col-layout .content-section:last-child {
     margin-bottom: 0;
 }
+
 /* =========================================
    VARIANTE 3 COLONNE UNITE (Senza Sticky)
    ========================================= */
 @media screen and (min-width: 768px) {
+
     .three-col-layout.united .col-left,
     .three-col-layout.united .col-right {
         position: static;
@@ -1401,11 +1403,11 @@ select {
         margin-top: 0;
         top: auto;
     }
-    
+
     .three-col-layout.united .col-left {
         margin-right: 20px;
     }
-    
+
     .three-col-layout.united .col-right {
         margin-left: 20px;
     }
