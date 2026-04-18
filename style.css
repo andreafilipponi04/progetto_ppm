@@ -1022,30 +1022,58 @@ select {
    FOOTER COMPLETO
    ========================================= */
 .site-footer {
-    background-color: #162b75;
-    color: #fff;
-    margin-top: 3rem;
+    background-color: #ededed;
+    border-top: 2px solid #afafaf;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #191919;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif !important;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .footer-main {
     max-width: 1337px;
     margin: 0 auto;
-    padding: 2.5rem 15px 2rem;
+    padding: 0 15px;
 }
 
+/* Stile per la scritta del logo nel footer */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.footer-brand .logo-shaw {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #162b75; /* Colore istituzionale per il brand */
+}
+
+.footer-brand .logo-local {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #162b75;
+}
+
+/* Grid layout - Mobile First (1 colonna) */
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    margin-bottom: 1rem;
 }
 
-.footer-col h4 {
+.footer-col h3 {
     font-size: 1rem;
     font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
     margin-bottom: 0.8rem;
-    color: #fff;
+    color: #191919;
 }
 
 .footer-col .follow-title {
@@ -1054,8 +1082,8 @@ select {
 
 .footer-col ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 .footer-col ul li {
@@ -1063,17 +1091,19 @@ select {
 }
 
 .footer-col ul li a {
-    color: rgba(255, 255, 255, 0.75);
+    color: #444444; /* Contrasto accessibile su #ededed */
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     transition: color 0.2s ease;
 }
 
-.footer-col ul li a:hover {
-    color: #ffffff;
+.footer-col ul li a:hover,
+.footer-col ul li a:focus-visible {
+    color: #162b75;
     text-decoration: underline;
 }
 
+/* Icone Social */
 .social-icons {
     display: flex;
     gap: 16px;
@@ -1081,26 +1111,56 @@ select {
 }
 
 .social-icons a {
-    color: rgba(255, 255, 255, 0.75);
+    color: #191919;
     display: flex;
     align-items: center;
     transition: color 0.2s ease;
 }
 
-.social-icons a:hover {
-    color: #ffffff;
+.social-icons a:hover,
+.social-icons a:focus-visible {
+    color: #162b75;
 }
 
+/* Barra di copyright inferiore */
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
-    padding: 1rem 15px;
 }
 
 .footer-bottom p {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    color: #444444;
     margin: 0;
+}
+
+/* --- MEDIA QUERIES FOOTER --- */
+
+/* Mobile: 2 colonne affiancate */
+@media screen and (min-width: 48rem) {
+    body {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Tablet: 2 colonne larghe */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop: 5 colonne allineate */
+@media screen and (min-width: 1025px) {
+    .footer-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 /* =========================================
@@ -1244,10 +1304,6 @@ select {
         gap: 0 3rem;
     }
 
-    /* Footer a 4 colonne */
-    .footer-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1276,9 +1332,6 @@ select {
         grid-template-columns: 1fr 300px;
     }
 
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1374,10 +1427,6 @@ select {
         height: 56px;
     }
 
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-    }
 }
 
 /* Fixes per tre colonne in fondo */
@@ -1411,4 +1460,342 @@ select {
     .three-col-layout.united .col-right {
         margin-left: 20px;
     }
+}
+
+/* =========================================
+   CLASSI PER SOSTITUZIONE STILI INLINE
+   ========================================= */
+
+/* -- Banner Pubblicitario Top -- */
+.top-ad-banner {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.top-ad-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* -- Spaziatori -- */
+.spacer-40 {
+    padding-top: 40px;
+}
+
+/* -- Griglia inferiore (seconda e terza) -- */
+.three-col-layout-lower {
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+}
+
+/* -- Section title large -- */
+.section-title-large {
+    font-size: 1.95rem;
+    margin-bottom: 1rem;
+}
+
+/* -- Articoli con immagine nelle colonne laterali -- */
+.lower-article {
+    margin-bottom: 2rem;
+}
+
+.lower-article-spaced {
+    margin-bottom: 2.5rem;
+}
+
+.lower-article-figure {
+    margin-bottom: 0.8rem;
+}
+
+.lower-article-img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.lower-article-title {
+    font-size: 1.05rem;
+    line-height: 1.3;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* -- Hero article nell'area inferiore -- */
+.hero-article-lower {
+    margin-bottom: 2rem;
+}
+
+.hero-article-lower-figure {
+    margin-bottom: 1rem;
+}
+
+.hero-article-lower-figure-center {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.author-spaced {
+    margin-bottom: 1.5rem;
+}
+
+.article-bullets-spaced {
+    margin-bottom: 2.5rem;
+    padding-left: 1.2rem;
+}
+
+/* -- Opinion Section (colonna destra) -- */
+.opinion-section {
+    margin-bottom: 2.5rem;
+}
+
+.opinion-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.opinion-bullets {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+}
+
+.opinion-bullet-item {
+    margin-bottom: 1.5rem;
+}
+
+/* -- Widget Heroes / Contest -- */
+.widget-heroes-container {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding: 0;
+    background: transparent;
+}
+
+.widget-heroes-figure {
+    margin-bottom: 1.5rem;
+}
+
+.widget-heroes-img {
+    width: 100%;
+}
+
+.widget-heroes-text {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+    color: #191919;
+    text-align: left;
+    padding-left: 1.2rem;
+    font-weight: 600;
+}
+
+.widget-heroes-btn {
+    display: inline-block;
+    background-color: #162b75;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* -- Ad container sticky -- */
+.ad-container-sticky {
+    margin-top: 2.5rem;
+    position: sticky;
+    top: 90px;
+}
+
+.ad-container-sticky img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* -- Obituaries Section -- */
+.obituaries-section {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    max-width: 1337px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.obituaries-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.obituaries-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+.obits-slider {
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+.obits-track {
+    max-width: 1042px;
+    width: 100%;
+}
+
+/* -- Obituaries "View All" button -- */
+.obits-view-all-wrapper {
+    width: 100%;
+    max-width: 1042px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.obits-view-all-btn {
+    margin-top: 1rem;
+    margin-right: -113px;
+    width: 188px;
+    height: 48px;
+    background-color: #162b75;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* -- Wheels Section -- */
+.wheels-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 1284px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.wheels-outer {
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+    background-color: #fff;
+    position: relative;
+    width: 1254px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.wheels-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 0;
+}
+
+.wheels-header h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #444;
+    margin: 0;
+}
+
+.wheels-viewport {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.wheels-nav-btn {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    font-size: 1.2rem;
+}
+
+.wheels-prev {
+    left: 10px;
+}
+
+.wheels-next {
+    right: 10px;
+}
+
+.wheels-track {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+
+.wheels-card {
+    flex: 0 0 313px;
+    max-width: 313px;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #dcdcdc;
+    box-sizing: border-box;
+}
+
+.wheels-card .wheels-img {
+    margin: 0;
+    width: 313px;
+    max-width: 100%;
+    height: 182px;
+}
+
+.wheels-card .wheels-img img {
+    width: 100%;
+    height: 182px;
+    display: block;
+    object-fit: cover;
+}
+
+.wheels-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.wheels-content h3 {
+    font-size: 1.05rem;
+    line-height: 1.35;
+    font-weight: 500;
+    cursor: pointer;
+    color: #2d73c3;
+    margin: 0 0 8px 0;
+}
+
+.wheels-content p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.45;
+    margin: 0 0 12px 0;
+}
+
+.wheels-content .wheels-date {
+    font-size: 0.75rem;
+    color: #777;
+    margin: auto 0 0 0;
 }
