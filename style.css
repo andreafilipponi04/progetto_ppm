@@ -1052,7 +1052,8 @@ select {
 .footer-brand .logo-shaw {
     font-size: 2.2rem;
     font-weight: 900;
-    color: #162b75; /* Colore istituzionale per il brand */
+    color: #162b75;
+    /* Colore istituzionale per il brand */
 }
 
 .footer-brand .logo-local {
@@ -1061,10 +1062,10 @@ select {
     color: #162b75;
 }
 
-/* Grid layout - Mobile First (1 colonna) */
+/* Grid layout - Responsive First (3x2) */
 .footer-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 1rem;
 }
@@ -1091,7 +1092,8 @@ select {
 }
 
 .footer-col ul li a {
-    color: #444444; /* Contrasto accessibile su #ededed */
+    color: #444444;
+    /* Contrasto accessibile su #ededed */
     text-decoration: none;
     font-size: 0.95rem;
     transition: color 0.2s ease;
@@ -1135,24 +1137,9 @@ select {
 
 /* --- MEDIA QUERIES FOOTER --- */
 
-/* Mobile: 2 colonne affiancate */
 @media screen and (min-width: 48rem) {
     body {
         font-size: 1.125rem;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-    }
-}
-
-/* Tablet: 2 colonne larghe */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1308,20 +1295,24 @@ select {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .three-col-layout {
-        grid-template-columns: auto 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
+    .three-col-layout .col-center {
+        order: -1;
+    }
+
+    .col-left,
     .col-right {
-        grid-column: 1 / -1;
         width: 100%;
-        margin-left: 0;
         position: static;
-        display: flex;
-        justify-content: center;
+        margin: 0;
     }
 
     .col-center {
-        border-right: none;
+        border: none;
+        padding: 0;
     }
 
     .event-card {
@@ -1447,6 +1438,65 @@ select {
 
     .wheels-card .wheels-img {
         width: 100%;
+    }
+}
+
+/* =========================================
+   GENERIC RESPONSIVE OVERRIDES (max-width: 1024px)
+   ========================================= */
+@media screen and (max-width: 1024px) {
+
+    /* 1. Top Stories 50/50 */
+    .list-article {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap: 15px !important;
+    }
+
+    .article-text,
+    .article-thumb {
+        flex: 1 1 50% !important;
+        max-width: calc(50% - 7.5px) !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* 2. Ad in colonna destra (same dimensions, not full width) */
+    .ad-container img {
+        max-width: 300px !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    /* 3. Everyday heroes image fullscreen */
+    .widget-heroes-container {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+        width: calc(100% + 30px) !important;
+        max-width: none !important;
+    }
+
+    .widget-heroes-img {
+        width: 100% !important;
+        max-width: none !important;
+        height: auto !important;
+    }
+
+    /* 4. Let's play illinois ad left aligned and same dimensions */
+    .ad-container-sticky {
+        text-align: left !important;
+    }
+
+    .ad-container-sticky img {
+        margin: 0 !important;
+    }
+
+    /* 5. Reduce space below obituaries blue button */
+    .obituaries-section {
+        margin-bottom: 0 !important;
+    }
+
+    .obituaries-section+.spacer-40 {
+        padding-top: 10px !important;
     }
 }
 
@@ -1681,7 +1731,7 @@ select {
 
 .obits-view-all-btn {
     margin-top: 1rem;
-    margin-right: -113px;
+    margin-right: 0;
     width: 188px;
     height: 48px;
     background-color: #162b75;
