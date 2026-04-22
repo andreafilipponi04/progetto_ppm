@@ -1359,6 +1359,19 @@ select {
         padding-top: 0.5rem;
     }
 
+    .main-navigation {
+        display: none;
+    }
+
+    .three-col-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .three-col-layout .col-center {
+        order: -1;
+    }
+
     .nav-link {
         font-size: 0.875rem;
     }
@@ -1427,6 +1440,14 @@ select {
         height: 56px;
     }
 
+    .wheels-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .wheels-card .wheels-img {
+        width: 100%;
+    }
 }
 
 /* Fixes per tre colonne in fondo */
