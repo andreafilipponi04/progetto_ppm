@@ -1331,27 +1331,58 @@ select {
     }
 
     .site-header {
-        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+    /* Nascondi ricerca, subscribe e testo sign in */
+    .header-left .icon-btn[aria-label="Cerca nel sito"] {
+        display: none;
+    }
+
+    .btn-subscribe {
+        display: none;
+    }
+
+    .btn-signin span {
+        display: none;
     }
 
     .header-top {
         height: auto;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr auto 1fr;
         gap: 0.5rem;
-        padding: 0.8rem 1rem;
+        padding: 0.5rem 1rem;
     }
 
     .header-center {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        flex-direction: column;
+        grid-column: 2;
+        grid-row: 1;
+        flex-direction: row;
         gap: 0.5rem;
         justify-content: center;
-        padding-top: 0.5rem;
+        padding-top: 0;
     }
 
+    /* Riduciamo il logo su mobile per farlo stare su un'unica riga */
+    .logo-shaw,
+    .logo-local {
+        font-size: 1.5rem;
+    }
+
+    .logo-badge {
+        width: 34px;
+        height: 34px;
+    }
+
+    .badge-text {
+        font-size: 0.75rem;
+    }
+
+    /* navbar sempre visibile */
     .main-navigation {
-        display: none;
+        display: block;
     }
 
     .three-col-layout {
@@ -1364,21 +1395,36 @@ select {
     }
 
     .nav-link {
-        font-size: 0.875rem;
+        font-size: 1rem;
+        font-weight: 700;
     }
 
+    /* Mostriamo i separatori e permettiamo di andare a capo */
     .separator {
-        display: none;
+        display: flex;
     }
 
-    .list-article {
-        flex-direction: column-reverse;
+    .nav-list {
+        height: auto;
+        gap: 0.5rem 0.8rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
-    .article-thumb {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 1rem;
+    /* Sovrascriviamo le regole di 1024px per rimettere il testo sopra e l'immagine sotto */
+    .top-stories-list .list-article {
+        flex-direction: column !important;
+    }
+
+    .top-stories-list .article-text,
+    .top-stories-list .article-thumb {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+    }
+
+    .top-stories-list .article-thumb {
+        width: 100% !important;
+        margin-bottom: 1rem !important;
     }
 
     .hero-article h2 {
@@ -1439,12 +1485,46 @@ select {
     .wheels-card .wheels-img {
         width: 100%;
     }
+
+    /* Fix Everyday Heroes image size - aggiungo .col-right per avere specificità maggiore del blocco 1024px */
+    .col-right .widget-heroes-container {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: auto !important;
+    }
+
+    .col-right .widget-heroes-img {
+        max-width: 100% !important;
+        height: 380px !important;
+        object-fit: cover !important;
+    }
+
+    /* Schiaccia l'immagine Let's Play Illinois in altezza, larghezza 50% e rimuovi hover */
+    .col-right .ad-container-sticky {
+        text-align: left !important;
+    }
+
+    .col-right .ad-container-sticky img {
+        height: 160px !important;
+        object-fit: cover !important;
+        width: 50% !important;
+        margin: 0 !important;
+    }
+
+    .col-right .ad-container-sticky img:hover {
+        opacity: 1 !important;
+    }
 }
 
 /* =========================================
    GENERIC RESPONSIVE OVERRIDES (max-width: 1024px)
    ========================================= */
 @media screen and (max-width: 1024px) {
+
+    /* Nascondi tendina Northern Ipsum */
+    .header-select-wrapper {
+        display: none;
+    }
 
     /* 1. Top Stories 50/50 */
     .list-article {
@@ -1468,26 +1548,32 @@ select {
     }
 
     /* 3. Everyday heroes image fullscreen */
-    .widget-heroes-container {
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-        width: calc(100% + 30px) !important;
-        max-width: none !important;
+    .col-right .widget-heroes-container {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: auto !important;
     }
 
-    .widget-heroes-img {
-        width: 100% !important;
-        max-width: none !important;
-        height: auto !important;
+    .col-right .widget-heroes-img {
+        max-width: 100% !important;
+        height: 380px !important;
+        object-fit: cover !important;
     }
 
     /* 4. Let's play illinois ad left aligned and same dimensions */
-    .ad-container-sticky {
+    .col-right .ad-container-sticky {
         text-align: left !important;
     }
 
-    .ad-container-sticky img {
+    .col-right .ad-container-sticky img {
+        height: 160px !important;
+        object-fit: cover !important;
+        width: 50% !important;
         margin: 0 !important;
+    }
+
+    .col-right .ad-container-sticky img:hover {
+        opacity: 1 !important;
     }
 
     /* 5. Reduce space below obituaries blue button */
