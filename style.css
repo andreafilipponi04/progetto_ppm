@@ -7,16 +7,26 @@
     padding: 0;
 }
 
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     padding-top: 66px;
     background-color: #ffffff;
     color: #191919;
+    overflow-x: hidden;
 }
 
 button,
 select {
     font-family: inherit;
+}
+
+.site-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    /* Questo blocca al 100% qualsiasi sbavatura su mobile */
+    position: relative;
 }
 
 .sr-only {
@@ -1143,6 +1153,7 @@ select {
     }
 }
 
+
 /* Desktop: 5 colonne allineate */
 @media screen and (min-width: 1025px) {
     .footer-grid {
@@ -1477,15 +1488,6 @@ select {
         height: 56px;
     }
 
-    .wheels-card {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .wheels-card .wheels-img {
-        width: 100%;
-    }
-
     /* Fix Everyday Heroes image size - aggiungo .col-right per avere specificità maggiore del blocco 1024px */
     .col-right .widget-heroes-container {
         margin-left: 0 !important;
@@ -1513,6 +1515,15 @@ select {
 
     .col-right .ad-container-sticky img:hover {
         opacity: 1 !important;
+    }
+
+    .wheels-card {
+        flex: 0 0 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+
+    .wheels-card .wheels-img {
+        width: 100%;
     }
 }
 
@@ -1787,6 +1798,8 @@ select {
     align-items: center;
     max-width: 1140px;
     margin: 0 auto;
+    overflow: hidden;
+    /* ← AGGIUNGI QUESTA */
 }
 
 .obituaries-title {
@@ -1847,9 +1860,12 @@ select {
     border-radius: 2px;
     background-color: #fff;
     position: relative;
-    width: 1254px;
+    width: 100%;
+    /* ← ERA 1254px, CAMBIA IN 100% */
     max-width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
+    /* ← AGGIUNGI QUESTA */
 }
 
 .wheels-header {
@@ -1955,4 +1971,46 @@ select {
     font-size: 0.75rem;
     color: #777;
     margin: auto 0 0 0;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.obituaries-section,
+.obituaries-inner,
+.obits-slider {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.events-track.obits-track {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .slider-container.obits-slider {
+        gap: 0;
+    }
+
+    .slider-container.obits-slider .slider-btn {
+        display: none;
+    }
+
+    .events-track.obits-track {
+        padding: 0;
+    }
+
+    .obit-card {
+        flex: 0 0 220px;
+        width: 220px;
+    }
 }

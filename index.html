@@ -16,1334 +16,1349 @@
 </head>
 
 <body>
+    <div class="site-wrapper">
 
-    <!-- ==========================================
+        <!-- ==========================================
  HEADER FISSO BLU (site-header)
  ========================================== -->
-    <header class="site-header">
-        <div class="header-top">
-            <div class="header-left">
-                <button type="button" class="icon-btn" aria-label="Cerca nel sito">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"
-                        aria-hidden="true">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </button>
-                <button type="button" class="icon-btn" aria-label="Apri menu principale">
-                    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5"
-                        aria-hidden="true">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
-            </div>
+        <header class="site-header">
+            <div class="header-top">
+                <div class="header-left">
+                    <button type="button" class="icon-btn" aria-label="Cerca nel sito">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                            stroke-width="2.5" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <button type="button" class="icon-btn" aria-label="Apri menu principale">
+                        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+                            stroke-width="2.5" aria-hidden="true">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
 
-            <div class="header-center">
-                <a href="#" aria-label="Torna alla Homepage" class="logo-link">
-                    <div class="logo-container">
-                        <span class="logo-badge">
-                            <span class="badge-text">175</span>
-                            <span class="badge-sub">YEARS</span>
-                        </span>
-                        <span class="logo-shaw">SHAW</span>
-                        <span class="logo-local">LOCAL</span>
+                <div class="header-center">
+                    <a href="#" aria-label="Torna alla Homepage" class="logo-link">
+                        <div class="logo-container">
+                            <span class="logo-badge">
+                                <span class="badge-text">175</span>
+                                <span class="badge-sub">YEARS</span>
+                            </span>
+                            <span class="logo-shaw">SHAW</span>
+                            <span class="logo-local">LOCAL</span>
+                        </div>
+                    </a>
+
+                    <div class="header-select-wrapper">
+                        <label for="region-select" class="sr-only">Seleziona la tua area geografica</label>
+                        <select id="region-select" class="region-select">
+                            <option value="northern-ipsum">Northern Ipsum</option>
+                            <option value="southern-ipsum">Southern Ipsum</option>
+                            <option value="western-ipsum">Western Ipsum</option>
+                        </select>
                     </div>
-                </a>
+                </div>
 
-                <div class="header-select-wrapper">
-                    <label for="region-select" class="sr-only">Seleziona la tua area geografica</label>
-                    <select id="region-select" class="region-select">
-                        <option value="northern-ipsum">Northern Ipsum</option>
-                        <option value="southern-ipsum">Southern Ipsum</option>
-                        <option value="western-ipsum">Western Ipsum</option>
-                    </select>
+                <div class="header-right">
+                    <button type="button" class="btn-subscribe">Subscribe</button>
+                    <button type="button" class="btn-signin" aria-label="Sign in">
+                        <span>Sign in</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+                            </path>
+                        </svg>
+                    </button>
                 </div>
             </div>
+        </header>
 
-            <div class="header-right">
-                <button type="button" class="btn-subscribe">Subscribe</button>
-                <button type="button" class="btn-signin" aria-label="Sign in">
-                    <span>Sign in</span>
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-                        <path
-                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- ==========================================
+        <!-- ==========================================
  NAVBAR BIANCA
  ========================================== -->
-    <nav class="main-navigation" aria-label="Menu di Categoria">
-        <ul class="nav-list">
-            <li><a href="#" class="nav-link">ipsum 1</a></li>
-            <li class="separator" aria-hidden="true">•</li>
-            <li><a href="#" class="nav-link">ipsum 2</a></li>
-            <li class="separator" aria-hidden="true">•</li>
-            <li><a href="#" class="nav-link">ipsum 3</a></li>
-            <li class="separator" aria-hidden="true">•</li>
-            <li><a href="#" class="nav-link">ipsum 4</a></li>
-            <li class="separator" aria-hidden="true">•</li>
-            <li><a href="#" class="nav-link">ipsum 5</a></li>
-            <li class="separator" aria-hidden="true">•</li>
-            <li><a href="#" class="nav-link">ipsum 6</a></li>
-            <li class="separator" aria-hidden="true">•</li>
-            <li><a href="#" class="nav-link">ipsum 7</a></li>
-        </ul>
-    </nav>
+        <nav class="main-navigation" aria-label="Menu di Categoria">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">ipsum 1</a></li>
+                <li class="separator" aria-hidden="true">•</li>
+                <li><a href="#" class="nav-link">ipsum 2</a></li>
+                <li class="separator" aria-hidden="true">•</li>
+                <li><a href="#" class="nav-link">ipsum 3</a></li>
+                <li class="separator" aria-hidden="true">•</li>
+                <li><a href="#" class="nav-link">ipsum 4</a></li>
+                <li class="separator" aria-hidden="true">•</li>
+                <li><a href="#" class="nav-link">ipsum 5</a></li>
+                <li class="separator" aria-hidden="true">•</li>
+                <li><a href="#" class="nav-link">ipsum 6</a></li>
+                <li class="separator" aria-hidden="true">•</li>
+                <li><a href="#" class="nav-link">ipsum 7</a></li>
+            </ul>
+        </nav>
 
-    <!-- BANNER PUBBLICITARIO ORIZZONTALE -->
-    <div class="top-ad-banner">
-        <a href="#" aria-label="Banner Pubblicitario Heroes">
-            <img src="https://placehold.co/1200x120/e6d09f/0f0d0d?text=Heroes" alt="Heroes" width="1200" height="120">
-        </a>
-    </div>
+        <!-- BANNER PUBBLICITARIO ORIZZONTALE -->
+        <div class="top-ad-banner">
+            <a href="#" aria-label="Banner Pubblicitario Heroes">
+                <img src="https://placehold.co/1200x120/e6d09f/0f0d0d?text=Heroes" alt="Heroes" width="1200"
+                    height="120">
+            </a>
+        </div>
 
-    <!-- ==========================================
+        <!-- ==========================================
  CONTENUTO PRINCIPALE (Griglia a 3 Colonne)
  ========================================== -->
-    <main class="main-content" id="main-content">
-        <h1 class="sr-only">Notizie Locali e Aggiornamenti</h1>
+        <main class="main-content" id="main-content">
+            <h1 class="sr-only">Notizie Locali e Aggiornamenti</h1>
 
-        <div class="three-col-layout">
+            <div class="three-col-layout">
 
-            <!-- COLONNA SINISTRA -->
-            <aside class="col-left" aria-label="Notizie recenti e sponsorizzate">
-                <h2 class="section-title">Latest</h2>
-                <div class="latest-news">
-                    <article class="latest-item">
-                        <time datetime="2026-04-12T08:00">2h</time>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-                    </article>
-                    <article class="latest-item">
-                        <time datetime="2026-04-12T07:00">3h</time>
-                        <h3>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                    </article>
-                    <article class="latest-item">
-                        <time datetime="2026-04-12T06:00">4h</time>
-                        <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h3>
-                    </article>
-                    <article class="latest-item">
-                        <time datetime="2026-04-11T20:00">12h</time>
-                        <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</h3>
-                    </article>
-                    <article class="latest-item">
-                        <time datetime="2026-04-11T18:00">14h</time>
-                        <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</h3>
-                    </article>
-                    <article class="latest-item">
-                        <time datetime="2026-04-10T12:00">1d</time>
-                        <h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</h3>
-                    </article>
-                    <article class="latest-item">
-                        <time datetime="2026-04-09T10:00">2d</time>
-                        <h3>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</h3>
-                    </article>
-                    <article class="latest-item">
-                        <time datetime="2026-04-08T09:00">3d</time>
-                        <h3>Consectetur, adipisci velit, sed quia non numquam eius modi tempora</h3>
-                    </article>
-                    <article class="latest-item">
-                        <time datetime="2026-04-07T08:00">4d</time>
-                        <h3>Incidunt ut labore et dolore magnam aliquam quaerat voluptatem</h3>
-                    </article>
-                </div>
-
-                <h2 class="section-title">Sponsored</h2>
-                <div class="sponsored-news">
-                    <article class="sponsored-item">
-                        <figure class="sponsored-figure">
-                            <img src="https://placehold.co/300x200" alt="Immagine sponsorizzata del primo prodotto"
-                                width="300" height="200">
-                            <span class="sponsored-badge">SPONSORED</span>
-                        </figure>
-                        <h3>Maiores alias consequatur aut perferendis doloribus asperiores</h3>
-                    </article>
-                    <article class="sponsored-item">
-                        <figure class="sponsored-figure">
-                            <img src="https://placehold.co/300x200" alt="Immagine sponsorizzata del secondo prodotto"
-                                width="300" height="200">
-                            <span class="sponsored-badge">SPONSORED</span>
-                        </figure>
-                        <h3>Temporibus autem quibusdam et aut officiis debitis aut rerum</h3>
-                    </article>
-                </div>
-            </aside>
-
-            <!-- COLONNA CENTRALE -->
-            <section class="col-center" aria-label="Articoli Principali">
-                <article class="hero-article">
-                    <figure>
-                        <img src="https://placehold.co/605x454/222/fff?text=Suburban+Life+Hero"
-                            alt="Immagine principale dell'articolo in primo piano" width="605" height="454">
-                    </figure>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
-                    </h2>
-                    <p class="excerpt">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                    <p class="author">By <span>Lorem Ipsum</span></p>
-                </article>
-
-                <div class="top-stories-header">
-                    <h2>Top Stories</h2>
-                </div>
-
-                <div class="top-stories-list">
-                    <article class="list-article">
-                        <div class="article-text">
+                <!-- COLONNA SINISTRA -->
+                <aside class="col-left" aria-label="Notizie recenti e sponsorizzate">
+                    <h2 class="section-title">Latest</h2>
+                    <div class="latest-news">
+                        <article class="latest-item">
+                            <time datetime="2026-04-12T08:00">2h</time>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                        </article>
+                        <article class="latest-item">
+                            <time datetime="2026-04-12T07:00">3h</time>
                             <h3>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
-                            <p class="author">By <span>Pellentesque Habitant</span> - Shaw Local Ipsum Network</p>
-                        </div>
-                        <figure class="article-thumb">
-                            <img src="https://placehold.co/271x152/444/fff?text=Data+Centers"
-                                alt="Miniatura del primo articolo" width="271" height="152">
+                        </article>
+                        <article class="latest-item">
+                            <time datetime="2026-04-12T06:00">4h</time>
+                            <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h3>
+                        </article>
+                        <article class="latest-item">
+                            <time datetime="2026-04-11T20:00">12h</time>
+                            <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</h3>
+                        </article>
+                        <article class="latest-item">
+                            <time datetime="2026-04-11T18:00">14h</time>
+                            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</h3>
+                        </article>
+                        <article class="latest-item">
+                            <time datetime="2026-04-10T12:00">1d</time>
+                            <h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</h3>
+                        </article>
+                        <article class="latest-item">
+                            <time datetime="2026-04-09T10:00">2d</time>
+                            <h3>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</h3>
+                        </article>
+                        <article class="latest-item">
+                            <time datetime="2026-04-08T09:00">3d</time>
+                            <h3>Consectetur, adipisci velit, sed quia non numquam eius modi tempora</h3>
+                        </article>
+                        <article class="latest-item">
+                            <time datetime="2026-04-07T08:00">4d</time>
+                            <h3>Incidunt ut labore et dolore magnam aliquam quaerat voluptatem</h3>
+                        </article>
+                    </div>
+
+                    <h2 class="section-title">Sponsored</h2>
+                    <div class="sponsored-news">
+                        <article class="sponsored-item">
+                            <figure class="sponsored-figure">
+                                <img src="https://placehold.co/300x200" alt="Immagine sponsorizzata del primo prodotto"
+                                    width="300" height="200">
+                                <span class="sponsored-badge">SPONSORED</span>
+                            </figure>
+                            <h3>Maiores alias consequatur aut perferendis doloribus asperiores</h3>
+                        </article>
+                        <article class="sponsored-item">
+                            <figure class="sponsored-figure">
+                                <img src="https://placehold.co/300x200"
+                                    alt="Immagine sponsorizzata del secondo prodotto" width="300" height="200">
+                                <span class="sponsored-badge">SPONSORED</span>
+                            </figure>
+                            <h3>Temporibus autem quibusdam et aut officiis debitis aut rerum</h3>
+                        </article>
+                    </div>
+                </aside>
+
+                <!-- COLONNA CENTRALE -->
+                <section class="col-center" aria-label="Articoli Principali">
+                    <article class="hero-article">
+                        <figure>
+                            <img src="https://placehold.co/605x454/222/fff?text=Suburban+Life+Hero"
+                                alt="Immagine principale dell'articolo in primo piano" width="605" height="454">
                         </figure>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
+                        </h2>
+                        <p class="excerpt">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse
+                            cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <p class="author">By <span>Lorem Ipsum</span></p>
                     </article>
 
-                    <article class="list-article">
-                        <div class="article-text">
-                            <h3>Quis autem vel eum iure reprehenderit qui in ea voluptate</h3>
-                            <p class="author">By <span>Lorem Ipsum</span></p>
-                        </div>
-                        <figure class="article-thumb">
-                            <img src="https://placehold.co/271x152/333/fff?text=Police+Chase"
-                                alt="Miniatura del secondo articolo" width="271" height="152">
-                        </figure>
-                    </article>
+                    <div class="top-stories-header">
+                        <h2>Top Stories</h2>
+                    </div>
 
-                    <ul class="article-bullets">
-                        <li><a href="#">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-                                laboriosam</a></li>
-                        <li><a href="#">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                                molestiae</a></li>
-                        <li><a href="#">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                praesentium</a></li>
-                    </ul>
+                    <div class="top-stories-list">
+                        <article class="list-article">
+                            <div class="article-text">
+                                <h3>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+                                <p class="author">By <span>Pellentesque Habitant</span> - Shaw Local Ipsum Network</p>
+                            </div>
+                            <figure class="article-thumb">
+                                <img src="https://placehold.co/271x152/444/fff?text=Data+Centers"
+                                    alt="Miniatura del primo articolo" width="271" height="152">
+                            </figure>
+                        </article>
 
-                    <article class="list-article">
-                        <div class="article-text">
-                            <h3>Et harum quidem rerum facilis est et expedita distinctio</h3>
-                            <p class="author">By <span>Alice Brown</span> - Daily Ipsum Media Group</p>
-                        </div>
-                        <figure class="article-thumb">
-                            <img src="https://placehold.co/271x152" alt="Miniatura del terzo articolo" width="271"
-                                height="152">
-                        </figure>
-                    </article>
+                        <article class="list-article">
+                            <div class="article-text">
+                                <h3>Quis autem vel eum iure reprehenderit qui in ea voluptate</h3>
+                                <p class="author">By <span>Lorem Ipsum</span></p>
+                            </div>
+                            <figure class="article-thumb">
+                                <img src="https://placehold.co/271x152/333/fff?text=Police+Chase"
+                                    alt="Miniatura del secondo articolo" width="271" height="152">
+                            </figure>
+                        </article>
 
-                    <article class="list-article">
-                        <div class="article-text">
-                            <h3>Itaque earum rerum hic tenetur a sapiente delectus</h3>
-                            <p class="author">By <span>Mark Johnson</span></p>
-                        </div>
-                        <figure class="article-thumb">
-                            <img src="https://placehold.co/271x152" alt="Miniatura del quarto articolo" width="271"
-                                height="152">
-                        </figure>
-                    </article>
+                        <ul class="article-bullets">
+                            <li><a href="#">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                    suscipit
+                                    laboriosam</a></li>
+                            <li><a href="#">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                                    nihil
+                                    molestiae</a></li>
+                            <li><a href="#">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium</a></li>
+                        </ul>
 
-                    <ul class="article-bullets">
-                        <li><a href="#">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
-                                saepe</a></li>
-                        <li><a href="#">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit</a>
-                        </li>
-                        <li><a href="#">Similique sunt in culpa qui officia deserunt mollitia animi id est laborum et
-                                dolorum fuga</a></li>
-                    </ul>
-                </div>
-            </section>
+                        <article class="list-article">
+                            <div class="article-text">
+                                <h3>Et harum quidem rerum facilis est et expedita distinctio</h3>
+                                <p class="author">By <span>Alice Brown</span> - Daily Ipsum Media Group</p>
+                            </div>
+                            <figure class="article-thumb">
+                                <img src="https://placehold.co/271x152" alt="Miniatura del terzo articolo" width="271"
+                                    height="152">
+                            </figure>
+                        </article>
 
-            <!-- COLONNA DESTRA -->
-            <aside class="col-right" aria-label="Spazio Pubblicitario">
-                <h2 class="sr-only">Pubblicità</h2>
-                <div class="ad-container">
-                    <figure>
-                        <img src="https://placehold.co/300x500" alt="Banner pubblicitario verticale" width="300"
-                            height="500">
-                    </figure>
-                </div>
-            </aside>
+                        <article class="list-article">
+                            <div class="article-text">
+                                <h3>Itaque earum rerum hic tenetur a sapiente delectus</h3>
+                                <p class="author">By <span>Mark Johnson</span></p>
+                            </div>
+                            <figure class="article-thumb">
+                                <img src="https://placehold.co/271x152" alt="Miniatura del quarto articolo" width="271"
+                                    height="152">
+                            </figure>
+                        </article>
 
-        </div> <!-- Fine Three Col Layout -->
-
-        <!-- ==========================================
-     SPAZIATORE PRIMA DELLO SLIDER
-     ========================================== -->
-        <div class="spacer-40" aria-hidden="true"></div>
-
-        <!-- ==========================================
-     SEZIONE SLIDER EVENTI
-     ========================================== -->
-        <section class="events-slider-section" aria-labelledby="events-title">
-
-            <div class="events-header">
-                <h2 id="events-title">Suburban Life Events</h2>
-                <div class="events-links">
-                    <a href="#" aria-label="Vedi tutti gli eventi">
-                        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg>
-                        See All Events
-                    </a>
-                    <a href="#" class="add-event-link" aria-label="Aggiungi il tuo evento">
-                        <span aria-hidden="true">+</span> Add your event
-                    </a>
-                </div>
-            </div>
-
-            <!-- Contenitore Slider: Frecce + Track -->
-            <div class="slider-container">
-
-                <!-- FRECCIA SINISTRA -->
-                <button type="button" class="slider-btn prev-btn" aria-label="Scorri eventi precedenti">
-                    <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                </button>
-
-                <!-- TRACK EVENTI (Le 7 celle) -->
-                <div class="events-track" role="region" aria-label="Lista Eventi Scorrevole" tabindex="0">
-
-                    <!-- Cella 1 (In evidenza) -->
-                    <article class="event-card highlight">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Dom, Apr 19</span>
-                            <img src="https://placehold.co/300x200/2a2a2a/ffffff?text=Evento+1" alt="Immagine evento 1"
-                                width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Lorem ipsum dolor sit amet: Consectetur</h3>
-                            <p class="event-location">Ipsum Location</p>
-                        </div>
-                    </article>
-
-                    <!-- Cella 2 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+2" alt="Immagine evento 2"
-                                width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Sed do eiusmod tempor incididunt ut labore</h3>
-                            <p class="event-location">Dolor Sit Amet</p>
-                        </div>
-                    </article>
-
-                    <!-- Cella 3 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/8c8c8c/ffffff?text=Evento+3" alt="Immagine evento 3"
-                                width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Ut enim ad minim veniam quis nostrud</h3>
-                            <p class="event-location">Consectetur Center</p>
-                        </div>
-                    </article>
-
-                    <!-- Cella 4 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/a3a3a3/ffffff?text=Evento+4" alt="Immagine evento 4"
-                                width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Duis aute irure dolor in reprehenderit</h3>
-                            <p class="event-location">Adipiscing Lodge</p>
-                        </div>
-                    </article>
-
-                    <!-- Cella 5 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/cccccc/000000?text=Evento+5" alt="Immagine evento 5"
-                                width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Excepteur sint occaecat cupidatat non</h3>
-                            <p class="event-location">Elit Experience</p>
-                        </div>
-                    </article>
-
-                    <!-- Cella 6 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/8c8c8c/ffffff?text=Evento+6" alt="Immagine evento 6"
-                                width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Sunt in culpa qui officia deserunt mollit</h3>
-                            <p class="event-location">Tempor Resort</p>
-                        </div>
-                    </article>
-
-                    <!-- Cella 7 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+7" alt="Immagine evento 7"
-                                width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Anim id est laborum perspiciatis unde omnis</h3>
-                            <p class="event-location">Anim Club</p>
-                        </div>
-                    </article>
-
-
-                    <!-- Cella 8 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+8" alt="Immagine evento 8"
-                                width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 8 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 8</p>
-                        </div>
-                    </article>
-                    <!-- Cella 9 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+9" alt="Immagine evento 9"
-                                width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 9 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 9</p>
-                        </div>
-                    </article>
-                    <!-- Cella 10 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+10"
-                                alt="Immagine evento 10" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 10 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 10</p>
-                        </div>
-                    </article>
-                    <!-- Cella 11 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+11"
-                                alt="Immagine evento 11" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 11 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 11</p>
-                        </div>
-                    </article>
-                    <!-- Cella 12 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+12"
-                                alt="Immagine evento 12" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 12 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 12</p>
-                        </div>
-                    </article>
-                    <!-- Cella 13 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+13"
-                                alt="Immagine evento 13" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 13 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 13</p>
-                        </div>
-                    </article>
-                    <!-- Cella 14 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+14"
-                                alt="Immagine evento 14" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 14 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 14</p>
-                        </div>
-                    </article>
-                    <!-- Cella 15 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+15"
-                                alt="Immagine evento 15" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 15 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 15</p>
-                        </div>
-                    </article>
-                    <!-- Cella 16 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+16"
-                                alt="Immagine evento 16" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 16 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 16</p>
-                        </div>
-                    </article>
-                    <!-- Cella 17 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+17"
-                                alt="Immagine evento 17" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 17 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 17</p>
-                        </div>
-                    </article>
-                    <!-- Cella 18 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+18"
-                                alt="Immagine evento 18" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 18 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 18</p>
-                        </div>
-                    </article>
-                    <!-- Cella 19 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+19"
-                                alt="Immagine evento 19" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 19 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 19</p>
-                        </div>
-                    </article>
-                    <!-- Cella 20 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+20"
-                                alt="Immagine evento 20" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 20 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 20</p>
-                        </div>
-                    </article>
-                    <!-- Cella 21 -->
-                    <article class="event-card">
-                        <figure class="thumbnail">
-                            <span class="event-date-badge">Lun, Mar 30</span>
-                            <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+21"
-                                alt="Immagine evento 21" width="300" height="200" loading="lazy">
-                        </figure>
-                        <div class="event-info">
-                            <h3 class="event-name">Evento 21 dolor sit amet consectetur</h3>
-                            <p class="event-location">Location 21</p>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- FRECCIA DESTRA -->
-                <button type="button" class="slider-btn next-btn" aria-label="Scorri prossimi eventi">
-                    <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </button>
-
-            </div>
-
-            <!-- CALENDARIO SOTTO LO SLIDER -->
-            <div class="calendar-strip" aria-label="Seleziona data eventi">
-                <div class="calendar-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                        <line x1="16" y1="2" x2="16" y2="6"></line>
-                        <line x1="8" y1="2" x2="8" y2="6"></line>
-                        <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
-                </div>
-                <div class="dates-track">
-                    <!-- Date distribuite -->
-                    <div class="date-item"><span class="day-name">Mon</span><span class="day-number">30</span></div>
-                    <div class="date-item"><span class="day-name">Tue</span><span class="day-number">31</span></div>
-                    <div class="date-item"><span class="day-name">Wed</span><span class="day-number">1</span></div>
-                    <div class="date-item"><span class="day-name">Thu</span><span class="day-number">2</span></div>
-                    <div class="date-item"><span class="day-name">Fri</span><span class="day-number">3</span></div>
-                    <div class="date-item"><span class="day-name">Sat</span><span class="day-number">4</span></div>
-                    <div class="date-item"><span class="day-name">Sun</span><span class="day-number">5</span></div>
-                    <div class="date-item"><span class="day-name">Mon</span><span class="day-number">6</span></div>
-                    <div class="date-item"><span class="day-name">Tue</span><span class="day-number">7</span></div>
-                    <div class="date-item"><span class="day-name">Wed</span><span class="day-number">8</span></div>
-                    <div class="date-item"><span class="day-name">Thu</span><span class="day-number">9</span></div>
-                    <div class="date-item"><span class="day-name">Fri</span><span class="day-number">10</span></div>
-                    <div class="date-item"><span class="day-name">Sat</span><span class="day-number">11</span></div>
-                    <div class="date-item"><span class="day-name">Sun</span><span class="day-number">12</span></div>
-                    <div class="date-item"><span class="day-name">Mon</span><span class="day-number">13</span></div>
-                    <div class="date-item"><span class="day-name">Tue</span><span class="day-number">14</span></div>
-                    <div class="date-item"><span class="day-name">Wed</span><span class="day-number">15</span></div>
-                    <div class="date-item"><span class="day-name">Thu</span><span class="day-number">16</span></div>
-                    <div class="date-item"><span class="day-name">Fri</span><span class="day-number">17</span></div>
-                    <div class="date-item"><span class="day-name">Sat</span><span class="day-number">18</span></div>
-                    <div class="date-item"><span class="day-name">Sun</span><span class="day-number">19</span></div>
-                    <div class="date-item"><span class="day-name">Mon</span><span class="day-number">20</span></div>
-                    <div class="date-item"><span class="day-name">Tue</span><span class="day-number">21</span></div>
-                    <div class="date-item"><span class="day-name">Wed</span><span class="day-number">22</span></div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- ==========================================
-     SPAZIATORE DOPO DELLO SLIDER
-     ========================================== -->
-        <div class="spacer-40" aria-hidden="true"></div>
-
-        <!-- ==========================================
-     CONTENUTO PRINCIPALE INFERIORE (Griglia a 3 Colonne)
-     ========================================== -->
-        <div class="three-col-layout three-col-layout-lower">
-
-            <!-- COLONNA SINISTRA -->
-            <aside class="col-left" aria-label="High School Sports and Friday Night Drive">
-                <h2 class="section-title section-title-large">High School Sports</h2>
-
-                <article class="latest-item lower-article">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/300x200/444/fff?text=Volleyball" alt="Volleyball" width="300"
-                            height="200" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna...</h3>
-                </article>
-
-                <article class="latest-item lower-article-spaced">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/300x250/efefef/162b75?text=NORTH" alt="NORTH logo" width="300"
-                            height="250" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</h3>
-                </article>
-
-                <h2 class="section-title section-title-large">Friday Night Drive</h2>
-
-                <article class="latest-item lower-article">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/300x200/333/fff?text=Football" alt="Football" width="300"
-                            height="200" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                        excepteur...</h3>
-                </article>
-
-                <article class="latest-item lower-article">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/300x200/222/fff?text=Football+2" alt="Football players"
-                            width="300" height="200" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Curabitur
-                        pretium tincidunt lacus nulla gravida orci a odio nullam varius turpis et commodo pharetra</h3>
-                </article>
-            </aside>
-
-            <!-- COLONNA CENTRALE -->
-            <section class="col-center" aria-label="Sports Articles">
-
-                <article class="hero-article hero-article-lower">
-                    <figure class="hero-article-lower-figure-center">
-                        <img src="https://placehold.co/605x340/555/fff?text=Soccer+Girls" alt="Soccer girls" width="559"
-                            height="314" loading="lazy">
-                    </figure>
-                    <h2>Lorem ipsum dolor sit
-                        amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore</h2>
-                    <p class="author author-spaced">By <span>Lorem Ipsum</span></p>
-
-                    <ul class="article-bullets article-bullets-spaced">
-                        <li><a href="#">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip</a></li>
-                        <li><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</a>
-                        </li>
-                        <li><a href="#">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia
-                                deserunt</a></li>
-                    </ul>
-                </article>
-
-                <article class="hero-article hero-article-lower">
-                    <figure class="hero-article-lower-figure">
-                        <img src="https://placehold.co/605x380/666/fff?text=Football+Red" alt="Football red" width="605"
-                            height="380" loading="lazy">
-                    </figure>
-                    <h2>Sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud</h2>
-                    <p class="author author-spaced">By <span>Lorem Ipsum</span></p>
-
-                    <ul class="article-bullets article-bullets-spaced">
-                        <li><a href="#">Nam libero tempore cum soluta nobis est eligendi optio cumque nihil</a></li>
-                        <li><a href="#">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus</a>
-                        </li>
-                        <li><a href="#">Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis
-                                voluptatibus</a></li>
-                    </ul>
-                </article>
-
-                <article class="hero-article hero-article-lower">
-                    <figure class="hero-article-lower-figure">
-                        <img src="https://placehold.co/605x380/777/fff?text=Football+White" alt="Football white"
-                            width="605" height="380" loading="lazy">
-                    </figure>
-                    <h2>Excepteur sint occaecat
-                        cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est</h2>
-                    <p class="author author-spaced">By <span>Lorem Ipsum</span></p>
-                </article>
-
-            </section>
-
-            <!-- COLONNA DESTRA -->
-            <aside class="col-right" aria-label="Opinion and Advertising">
-
-
-
-                <section class="opinion-section">
-                    <h2 class="section-title opinion-title">Opinion</h2>
-
-                    <ul class="article-bullets opinion-bullets">
-                        <li class="opinion-bullet-item"><a href="#">Lorem Ipsum: Dolor sit amet consectetur
-                                adipiscing elit sed do eiusmod tempor</a></li>
-                        <li class="opinion-bullet-item"><a href="#">Lorem Ipsum: Incididunt ut labore et dolore magna
-                                aliqua ut enim ad minim</a></li>
-                        <li class="opinion-bullet-item"><a href="#">Veniam quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo</a></li>
-                        <li class="opinion-bullet-item"><a href="#">Lorem Ipsum: Consequat duis aute irure dolor in
-                                reprehenderit in voluptate velit</a></li>
-                        <li class="opinion-bullet-item"><a href="#">Ipsum Dolor: Esse cillum dolore eu fugiat nulla
-                                pariatur excepteur sint occaecat</a></li>
-                        <li class="opinion-bullet-item"><a href="#">Lorem Ipsum: Cupidatat non proident sunt in culpa
-                                qui officia deserunt mollit</a></li>
-                    </ul>
+                        <ul class="article-bullets">
+                            <li><a href="#">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+                                    saepe</a></li>
+                            <li><a href="#">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                                    impedit</a>
+                            </li>
+                            <li><a href="#">Similique sunt in culpa qui officia deserunt mollitia animi id est laborum
+                                    et
+                                    dolorum fuga</a></li>
+                        </ul>
+                    </div>
                 </section>
 
-                <div class="widget-heroes-container">
-                    <figure class="widget-heroes-figure">
-                        <img src="https://placehold.co/300x150/d03333/fff?text=Everyday+Heroes" alt="Everyday Heroes Ad"
-                            width="300" height="150" loading="lazy" class="widget-heroes-img">
-                    </figure>
-                    <p class="widget-heroes-text">
-                        Lorem ipsum dolor sit amet adipiscing elit contestum</p>
-                    <a href="#" class="widget-btn widget-heroes-btn">Lorem
-                        Ipsum Dolor</a>
-                </div>
+                <!-- COLONNA DESTRA -->
+                <aside class="col-right" aria-label="Spazio Pubblicitario">
+                    <h2 class="sr-only">Pubblicità</h2>
+                    <div class="ad-container">
+                        <figure>
+                            <img src="https://placehold.co/300x500" alt="Banner pubblicitario verticale" width="300"
+                                height="500">
+                        </figure>
+                    </div>
+                </aside>
 
-                <div class="ad-container ad-container-sticky">
-                    <figure>
-                        <img src="https://placehold.co/300x250/2c3e50/fff?text=Let's+Play+Illinois"
-                            alt="Let's Play Illinois" width="300" height="250" loading="lazy">
-                    </figure>
-                </div>
+            </div> <!-- Fine Three Col Layout -->
 
-            </aside>
-
-        </div> <!-- Fine blocco 3 colonne inferiore -->
-
-        <!-- ==========================================
-     SEZIONE NECROLOGI (fuori dalla griglia a 3 colonne)
+            <!-- ==========================================
+     SPAZIATORE PRIMA DELLO SLIDER
      ========================================== -->
-        <section class="obituaries-section">
-            <div class="obituaries-inner">
-                <h2 class="obituaries-title">
-                    Lorem Ipsum Dolor Sit Amet</h2>
-                <div class="slider-container obits-slider">
-                    <button type="button" class="slider-btn prev-btn" aria-label="Scorri necrologi precedenti">
+            <div class="spacer-40" aria-hidden="true"></div>
+
+            <!-- ==========================================
+     SEZIONE SLIDER EVENTI
+     ========================================== -->
+            <section class="events-slider-section" aria-labelledby="events-title">
+
+                <div class="events-header">
+                    <h2 id="events-title">Suburban Life Events</h2>
+                    <div class="events-links">
+                        <a href="#" aria-label="Vedi tutti gli eventi">
+                            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            See All Events
+                        </a>
+                        <a href="#" class="add-event-link" aria-label="Aggiungi il tuo evento">
+                            <span aria-hidden="true">+</span> Add your event
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contenitore Slider: Frecce + Track -->
+                <div class="slider-container">
+
+                    <!-- FRECCIA SINISTRA -->
+                    <button type="button" class="slider-btn prev-btn" aria-label="Scorri eventi precedenti">
                         <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none"
                             stroke="currentColor" stroke-width="2">
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </button>
-                    <div class="events-track obits-track" role="region" aria-label="Lista Necrologi Scorrevole"
-                        tabindex="0">
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+1" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Ipsum, Lorem A.</h3>
-                                <p>Lorem A. Ipsum Natus: V Octobris, MCMXXXVI Obitus: XIII Martii, MMXXVI...</p>
-                                <div class="read-more">Read more</div>
-                            </div>
-                        </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+2" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
+
+                    <!-- TRACK EVENTI (Le 7 celle) -->
+                    <div class="events-track" role="region" aria-label="Lista Eventi Scorrevole" tabindex="0">
+
+                        <!-- Cella 1 (In evidenza) -->
+                        <article class="event-card highlight">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Dom, Apr 19</span>
+                                <img src="https://placehold.co/300x200/2a2a2a/ffffff?text=Evento+1"
+                                    alt="Immagine evento 1" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Lorem ipsum dolor sit amet: Consectetur</h3>
+                                <p class="event-location">Ipsum Location</p>
                             </div>
                         </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+3" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
-                            </div>
-                        </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+4" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
+
+                        <!-- Cella 2 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+2"
+                                    alt="Immagine evento 2" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Sed do eiusmod tempor incididunt ut labore</h3>
+                                <p class="event-location">Dolor Sit Amet</p>
                             </div>
                         </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+5" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
-                            </div>
-                        </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+6" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
+
+                        <!-- Cella 3 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/8c8c8c/ffffff?text=Evento+3"
+                                    alt="Immagine evento 3" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Ut enim ad minim veniam quis nostrud</h3>
+                                <p class="event-location">Consectetur Center</p>
                             </div>
                         </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+7" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
-                            </div>
-                        </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+8" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
+
+                        <!-- Cella 4 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/a3a3a3/ffffff?text=Evento+4"
+                                    alt="Immagine evento 4" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Duis aute irure dolor in reprehenderit</h3>
+                                <p class="event-location">Adipiscing Lodge</p>
                             </div>
                         </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+9" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
-                            </div>
-                        </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+10" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
+
+                        <!-- Cella 5 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/cccccc/000000?text=Evento+5"
+                                    alt="Immagine evento 5" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Excepteur sint occaecat cupidatat non</h3>
+                                <p class="event-location">Elit Experience</p>
                             </div>
                         </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+11" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
-                            </div>
-                        </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+12" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
+
+                        <!-- Cella 6 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/8c8c8c/ffffff?text=Evento+6"
+                                    alt="Immagine evento 6" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Sunt in culpa qui officia deserunt mollit</h3>
+                                <p class="event-location">Tempor Resort</p>
                             </div>
                         </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+13" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
-                            </div>
-                        </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+14" alt="Obituary">
-                            </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
+
+                        <!-- Cella 7 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+7"
+                                    alt="Immagine evento 7" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Anim id est laborum perspiciatis unde omnis</h3>
+                                <p class="event-location">Anim Club</p>
                             </div>
                         </article>
-                        <article class="obit-card">
-                            <div class="obit-img-wrapper">
-                                <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+15" alt="Obituary">
+
+
+                        <!-- Cella 8 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+8"
+                                    alt="Immagine evento 8" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 8 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 8</p>
                             </div>
-                            <div class="obit-content">
-                                <h3>Sather, Yvonne M.</h3>
-                                <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
-                                <div class="read-more">Read more</div>
+                        </article>
+                        <!-- Cella 9 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+9"
+                                    alt="Immagine evento 9" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 9 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 9</p>
+                            </div>
+                        </article>
+                        <!-- Cella 10 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+10"
+                                    alt="Immagine evento 10" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 10 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 10</p>
+                            </div>
+                        </article>
+                        <!-- Cella 11 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+11"
+                                    alt="Immagine evento 11" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 11 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 11</p>
+                            </div>
+                        </article>
+                        <!-- Cella 12 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+12"
+                                    alt="Immagine evento 12" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 12 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 12</p>
+                            </div>
+                        </article>
+                        <!-- Cella 13 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+13"
+                                    alt="Immagine evento 13" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 13 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 13</p>
+                            </div>
+                        </article>
+                        <!-- Cella 14 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+14"
+                                    alt="Immagine evento 14" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 14 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 14</p>
+                            </div>
+                        </article>
+                        <!-- Cella 15 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+15"
+                                    alt="Immagine evento 15" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 15 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 15</p>
+                            </div>
+                        </article>
+                        <!-- Cella 16 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+16"
+                                    alt="Immagine evento 16" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 16 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 16</p>
+                            </div>
+                        </article>
+                        <!-- Cella 17 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+17"
+                                    alt="Immagine evento 17" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 17 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 17</p>
+                            </div>
+                        </article>
+                        <!-- Cella 18 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+18"
+                                    alt="Immagine evento 18" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 18 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 18</p>
+                            </div>
+                        </article>
+                        <!-- Cella 19 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+19"
+                                    alt="Immagine evento 19" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 19 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 19</p>
+                            </div>
+                        </article>
+                        <!-- Cella 20 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+20"
+                                    alt="Immagine evento 20" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 20 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 20</p>
+                            </div>
+                        </article>
+                        <!-- Cella 21 -->
+                        <article class="event-card">
+                            <figure class="thumbnail">
+                                <span class="event-date-badge">Lun, Mar 30</span>
+                                <img src="https://placehold.co/300x200/5e5e5e/ffffff?text=Evento+21"
+                                    alt="Immagine evento 21" width="300" height="200" loading="lazy">
+                            </figure>
+                            <div class="event-info">
+                                <h3 class="event-name">Evento 21 dolor sit amet consectetur</h3>
+                                <p class="event-location">Location 21</p>
                             </div>
                         </article>
                     </div>
-                    <button type="button" class="slider-btn next-btn" aria-label="Scorri prossimi necrologi">
+
+                    <!-- FRECCIA DESTRA -->
+                    <button type="button" class="slider-btn next-btn" aria-label="Scorri prossimi eventi">
                         <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none"
                             stroke="currentColor" stroke-width="2">
                             <polyline points="9 18 15 12 9 6"></polyline>
                         </svg>
                     </button>
+
                 </div>
 
-                <div class="obits-view-all-wrapper">
-                    <a href="#" aria-label="Visualizza tutti i necrologi" class="obits-view-all-btn">Lorem
-                        Ipsum Videre</a>
+                <!-- CALENDARIO SOTTO LO SLIDER -->
+                <div class="calendar-strip" aria-label="Seleziona data eventi">
+                    <div class="calendar-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <div class="dates-track">
+                        <!-- Date distribuite -->
+                        <div class="date-item"><span class="day-name">Mon</span><span class="day-number">30</span></div>
+                        <div class="date-item"><span class="day-name">Tue</span><span class="day-number">31</span></div>
+                        <div class="date-item"><span class="day-name">Wed</span><span class="day-number">1</span></div>
+                        <div class="date-item"><span class="day-name">Thu</span><span class="day-number">2</span></div>
+                        <div class="date-item"><span class="day-name">Fri</span><span class="day-number">3</span></div>
+                        <div class="date-item"><span class="day-name">Sat</span><span class="day-number">4</span></div>
+                        <div class="date-item"><span class="day-name">Sun</span><span class="day-number">5</span></div>
+                        <div class="date-item"><span class="day-name">Mon</span><span class="day-number">6</span></div>
+                        <div class="date-item"><span class="day-name">Tue</span><span class="day-number">7</span></div>
+                        <div class="date-item"><span class="day-name">Wed</span><span class="day-number">8</span></div>
+                        <div class="date-item"><span class="day-name">Thu</span><span class="day-number">9</span></div>
+                        <div class="date-item"><span class="day-name">Fri</span><span class="day-number">10</span></div>
+                        <div class="date-item"><span class="day-name">Sat</span><span class="day-number">11</span></div>
+                        <div class="date-item"><span class="day-name">Sun</span><span class="day-number">12</span></div>
+                        <div class="date-item"><span class="day-name">Mon</span><span class="day-number">13</span></div>
+                        <div class="date-item"><span class="day-name">Tue</span><span class="day-number">14</span></div>
+                        <div class="date-item"><span class="day-name">Wed</span><span class="day-number">15</span></div>
+                        <div class="date-item"><span class="day-name">Thu</span><span class="day-number">16</span></div>
+                        <div class="date-item"><span class="day-name">Fri</span><span class="day-number">17</span></div>
+                        <div class="date-item"><span class="day-name">Sat</span><span class="day-number">18</span></div>
+                        <div class="date-item"><span class="day-name">Sun</span><span class="day-number">19</span></div>
+                        <div class="date-item"><span class="day-name">Mon</span><span class="day-number">20</span></div>
+                        <div class="date-item"><span class="day-name">Tue</span><span class="day-number">21</span></div>
+                        <div class="date-item"><span class="day-name">Wed</span><span class="day-number">22</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- ==========================================
-     SPAZIATORE DOPO DELLO SLIDER NECROLOGI
-     ========================================== -->
-        <div class="spacer-40" aria-hidden="true"></div>
-
-        <!-- ==========================================
-     CONTENUTO PRINCIPALE INFERIORE (Griglia a 3 Colonne)
-     ========================================== -->
-        <div class="three-col-layout three-col-layout-lower">
-
-            <!-- COLONNA SINISTRA -->
-            <aside class="col-left" aria-label="Photo Galleries and The Scene">
-                <h2 class="section-title section-title-large">Photo Galleries</h2>
-
-                <article class="latest-item lower-article">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/304x171/999/fff?text=Photo+Gallery+1" alt="Gallery 1" width="304"
-                            height="171" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Pellentesque habitant morbi
-                        tristique senectus et netus et malesuada fames ac turpis egestas vestibulum
-                    </h3>
-                </article>
-
-                <article class="latest-item lower-article-spaced">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/304x171/555/fff?text=Photo+Gallery+2" alt="Gallery 2" width="304"
-                            height="171" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Maecenas nec odio
-                        et ante tincidunt tempus donec vitae sapien ut libero</h3>
-                </article>
-
-                <article class="latest-item lower-article-spaced">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/304x171/333/fff?text=Photo+Gallery+3" alt="Gallery 3" width="304"
-                            height="171" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Praesent blandit
-                        laoreet nibh fusce convallis metus id felis dictumst</h3>
-                </article>
-
-                <h2 class="section-title section-title-large">The Scene</h2>
-
-                <article class="latest-item lower-article">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/304x171/0074e4/fff?text=Event+1" alt="Event 1" width="304"
-                            height="171" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Quinque Res Agendae:
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere</h3>
-                </article>
-
-                <article class="latest-item lower-article">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/304x171/27ae60/fff?text=Event+2" alt="Event 2" width="304"
-                            height="171" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">5 Things to Do:
-                        Earth Day Celebration, live comedy in Batavia & Aurora this weekend</h3>
-                </article>
-            </aside>
-
-            <!-- COLONNA CENTRALE -->
-            <section class="col-center" aria-label="More News">
-                <article class="hero-article hero-article-lower">
-                    <figure class="hero-article-lower-figure">
-                        <img src="https://placehold.co/559x314/666/fff?text=More+News+Hero" alt="More News Hero"
-                            width="559" height="314" loading="lazy">
-                    </figure>
-                    <h2>Aenean vulputate eleifend tellus aenean leo ligula porttitor eu consequat</h2>
-                    <p class="author author-spaced">By <span>Lorem Ipsum</span></p>
-
-                    <ul class="article-bullets article-bullets-spaced">
-                        <li><a href="#">Phasellus viverra nulla ut metus varius laoreet quisque rutrum aenean
-                                imperdiet</a></li>
-                        <li><a href="#">Etiam ultricies nisi vel augue curabitur ullamcorper ultricies nisi nam eget
-                                dui</a></li>
-                    </ul>
-                </article>
-
-                <article class="hero-article hero-article-lower">
-                    <figure class="hero-article-lower-figure">
-                        <img src="https://placehold.co/559x314/888/fff?text=Courts+Gavel" alt="Courts Gavel" width="559"
-                            height="314" loading="lazy">
-                    </figure>
-                    <h2>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero</h2>
-                    <p class="author author-spaced">By <span>Lorem Ipsum</span></p>
-
-                    <ul class="article-bullets article-bullets-spaced">
-                        <li><a href="#">Donec quam felis ultricies nec pellentesque eu pretium quis sem</a></li>
-                        <li><a href="#">Nulla consequat massa quis enim donec pede justo fringilla vel aliquet</a>
-                        </li>
-                        <li><a href="#">In enim justo rhoncus ut imperdiet a venenatis vitae justo nullam dictum
-                                felis</a></li>
-                        <li><a href="#">Sed consequat leo eget bibendum sodales augue velit cursus nunc</a></li>
-                    </ul>
-                </article>
             </section>
 
-            <!-- COLONNA DESTRA -->
-            <aside class="col-right" aria-label="Side News">
+            <!-- ==========================================
+     SPAZIATORE DOPO DELLO SLIDER
+     ========================================== -->
+            <div class="spacer-40" aria-hidden="true"></div>
 
-                <article class="latest-item lower-article">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/300x200/444/fff?text=News+Image+1" alt="News Image 1" width="300"
-                            height="200" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Vivamus elementum
-                        semper nisi aenean vulputate eleifend tellus aenean leo ligula</h3>
-                </article>
+            <!-- ==========================================
+     CONTENUTO PRINCIPALE INFERIORE (Griglia a 3 Colonne)
+     ========================================== -->
+            <div class="three-col-layout three-col-layout-lower">
 
-                <article class="latest-item lower-article">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/300x200/222/fff?text=News+Image+2" alt="News Image 2" width="300"
-                            height="200" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Phasellus viverra
-                        nulla ut metus varius laoreet quisque rutrum</h3>
-                </article>
+                <!-- COLONNA SINISTRA -->
+                <aside class="col-left" aria-label="High School Sports and Friday Night Drive">
+                    <h2 class="section-title section-title-large">High School Sports</h2>
 
-                <article class="latest-item lower-article">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/300x200/666/fff?text=News+Image+3" alt="News Image 3" width="300"
-                            height="200" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Nullam quis ante
-                        etiam sit amet orci eget eros faucibus tincidunt duis leo</h3>
-                </article>
+                    <article class="latest-item lower-article">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/300x200/444/fff?text=Volleyball" alt="Volleyball" width="300"
+                                height="200" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna...</h3>
+                    </article>
 
-                <article class="latest-item lower-article">
-                    <figure class="hero-article-img lower-article-figure">
-                        <img src="https://placehold.co/300x200/333/fff?text=News+Image+4" alt="News Image 4" width="300"
-                            height="200" loading="lazy" class="lower-article-img">
-                    </figure>
-                    <h3 class="lower-article-title">Praesent congue
-                        erat at massa sed cursus turpis vitae sagittis dignissim</h3>
-                </article>
+                    <article class="latest-item lower-article-spaced">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/300x250/efefef/162b75?text=NORTH" alt="NORTH logo"
+                                width="300" height="250" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...
+                        </h3>
+                    </article>
 
-            </aside>
+                    <h2 class="section-title section-title-large">Friday Night Drive</h2>
 
-        </div> <!-- Fine blocco 3 colonne inferiore -->
+                    <article class="latest-item lower-article">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/300x200/333/fff?text=Football" alt="Football" width="300"
+                                height="200" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                            excepteur...</h3>
+                    </article>
 
-        <!-- ==========================================
+                    <article class="latest-item lower-article">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/300x200/222/fff?text=Football+2" alt="Football players"
+                                width="300" height="200" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Curabitur
+                            pretium tincidunt lacus nulla gravida orci a odio nullam varius turpis et commodo pharetra
+                        </h3>
+                    </article>
+                </aside>
+
+                <!-- COLONNA CENTRALE -->
+                <section class="col-center" aria-label="Sports Articles">
+
+                    <article class="hero-article hero-article-lower">
+                        <figure class="hero-article-lower-figure-center">
+                            <img src="https://placehold.co/605x340/555/fff?text=Soccer+Girls" alt="Soccer girls"
+                                width="559" height="314" loading="lazy">
+                        </figure>
+                        <h2>Lorem ipsum dolor sit
+                            amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore</h2>
+                        <p class="author author-spaced">By <span>Lorem Ipsum</span></p>
+
+                        <ul class="article-bullets article-bullets-spaced">
+                            <li><a href="#">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip</a></li>
+                            <li><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    dolore</a>
+                            </li>
+                            <li><a href="#">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia
+                                    deserunt</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="hero-article hero-article-lower">
+                        <figure class="hero-article-lower-figure">
+                            <img src="https://placehold.co/605x380/666/fff?text=Football+Red" alt="Football red"
+                                width="605" height="380" loading="lazy">
+                        </figure>
+                        <h2>Sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud</h2>
+                        <p class="author author-spaced">By <span>Lorem Ipsum</span></p>
+
+                        <ul class="article-bullets article-bullets-spaced">
+                            <li><a href="#">Nam libero tempore cum soluta nobis est eligendi optio cumque nihil</a></li>
+                            <li><a href="#">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                    necessitatibus</a>
+                            </li>
+                            <li><a href="#">Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis
+                                    voluptatibus</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="hero-article hero-article-lower">
+                        <figure class="hero-article-lower-figure">
+                            <img src="https://placehold.co/605x380/777/fff?text=Football+White" alt="Football white"
+                                width="605" height="380" loading="lazy">
+                        </figure>
+                        <h2>Excepteur sint occaecat
+                            cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est</h2>
+                        <p class="author author-spaced">By <span>Lorem Ipsum</span></p>
+                    </article>
+
+                </section>
+
+                <!-- COLONNA DESTRA -->
+                <aside class="col-right" aria-label="Opinion and Advertising">
+
+
+
+                    <section class="opinion-section">
+                        <h2 class="section-title opinion-title">Opinion</h2>
+
+                        <ul class="article-bullets opinion-bullets">
+                            <li class="opinion-bullet-item"><a href="#">Lorem Ipsum: Dolor sit amet consectetur
+                                    adipiscing elit sed do eiusmod tempor</a></li>
+                            <li class="opinion-bullet-item"><a href="#">Lorem Ipsum: Incididunt ut labore et dolore
+                                    magna
+                                    aliqua ut enim ad minim</a></li>
+                            <li class="opinion-bullet-item"><a href="#">Veniam quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo</a></li>
+                            <li class="opinion-bullet-item"><a href="#">Lorem Ipsum: Consequat duis aute irure dolor in
+                                    reprehenderit in voluptate velit</a></li>
+                            <li class="opinion-bullet-item"><a href="#">Ipsum Dolor: Esse cillum dolore eu fugiat nulla
+                                    pariatur excepteur sint occaecat</a></li>
+                            <li class="opinion-bullet-item"><a href="#">Lorem Ipsum: Cupidatat non proident sunt in
+                                    culpa
+                                    qui officia deserunt mollit</a></li>
+                        </ul>
+                    </section>
+
+                    <div class="widget-heroes-container">
+                        <figure class="widget-heroes-figure">
+                            <img src="https://placehold.co/300x150/d03333/fff?text=Everyday+Heroes"
+                                alt="Everyday Heroes Ad" width="300" height="150" loading="lazy"
+                                class="widget-heroes-img">
+                        </figure>
+                        <p class="widget-heroes-text">
+                            Lorem ipsum dolor sit amet adipiscing elit contestum</p>
+                        <a href="#" class="widget-btn widget-heroes-btn">Lorem
+                            Ipsum Dolor</a>
+                    </div>
+
+                    <div class="ad-container ad-container-sticky">
+                        <figure>
+                            <img src="https://placehold.co/300x250/2c3e50/fff?text=Let's+Play+Illinois"
+                                alt="Let's Play Illinois" width="300" height="250" loading="lazy">
+                        </figure>
+                    </div>
+
+                </aside>
+
+            </div> <!-- Fine blocco 3 colonne inferiore -->
+
+            <!-- ==========================================
+     SEZIONE NECROLOGI (fuori dalla griglia a 3 colonne)
+     ========================================== -->
+            <section class="obituaries-section">
+                <div class="obituaries-inner">
+                    <h2 class="obituaries-title">
+                        Lorem Ipsum Dolor Sit Amet</h2>
+                    <div class="slider-container obits-slider">
+                        <button type="button" class="slider-btn prev-btn" aria-label="Scorri necrologi precedenti">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <div class="events-track obits-track" role="region" aria-label="Lista Necrologi Scorrevole"
+                            tabindex="0">
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+1" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Ipsum, Lorem A.</h3>
+                                    <p>Lorem A. Ipsum Natus: V Octobris, MCMXXXVI Obitus: XIII Martii, MMXXVI...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+2" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+3" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+4" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+5" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+6" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+7" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+8" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+9" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+10" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+11" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+12" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+13" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+14" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                            <article class="obit-card">
+                                <div class="obit-img-wrapper">
+                                    <img src="https://placehold.co/250x240/cccccc/333333?text=Photo+15" alt="Obituary">
+                                </div>
+                                <div class="obit-content">
+                                    <h3>Sather, Yvonne M.</h3>
+                                    <p>Yvonne M. Sather Born: October 5, 1936 Died: March 13, 2026...</p>
+                                    <div class="read-more">Read more</div>
+                                </div>
+                            </article>
+                        </div>
+                        <button type="button" class="slider-btn next-btn" aria-label="Scorri prossimi necrologi">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="obits-view-all-wrapper">
+                        <a href="#" aria-label="Visualizza tutti i necrologi" class="obits-view-all-btn">Lorem
+                            Ipsum Videre</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+     SPAZIATORE DOPO DELLO SLIDER NECROLOGI
+     ========================================== -->
+            <div class="spacer-40" aria-hidden="true"></div>
+
+            <!-- ==========================================
+     CONTENUTO PRINCIPALE INFERIORE (Griglia a 3 Colonne)
+     ========================================== -->
+            <div class="three-col-layout three-col-layout-lower">
+
+                <!-- COLONNA SINISTRA -->
+                <aside class="col-left" aria-label="Photo Galleries and The Scene">
+                    <h2 class="section-title section-title-large">Photo Galleries</h2>
+
+                    <article class="latest-item lower-article">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/304x171/999/fff?text=Photo+Gallery+1" alt="Gallery 1"
+                                width="304" height="171" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Pellentesque habitant morbi
+                            tristique senectus et netus et malesuada fames ac turpis egestas vestibulum
+                        </h3>
+                    </article>
+
+                    <article class="latest-item lower-article-spaced">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/304x171/555/fff?text=Photo+Gallery+2" alt="Gallery 2"
+                                width="304" height="171" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Maecenas nec odio
+                            et ante tincidunt tempus donec vitae sapien ut libero</h3>
+                    </article>
+
+                    <article class="latest-item lower-article-spaced">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/304x171/333/fff?text=Photo+Gallery+3" alt="Gallery 3"
+                                width="304" height="171" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Praesent blandit
+                            laoreet nibh fusce convallis metus id felis dictumst</h3>
+                    </article>
+
+                    <h2 class="section-title section-title-large">The Scene</h2>
+
+                    <article class="latest-item lower-article">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/304x171/0074e4/fff?text=Event+1" alt="Event 1" width="304"
+                                height="171" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Quinque Res Agendae:
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere</h3>
+                    </article>
+
+                    <article class="latest-item lower-article">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/304x171/27ae60/fff?text=Event+2" alt="Event 2" width="304"
+                                height="171" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">5 Things to Do:
+                            Earth Day Celebration, live comedy in Batavia & Aurora this weekend</h3>
+                    </article>
+                </aside>
+
+                <!-- COLONNA CENTRALE -->
+                <section class="col-center" aria-label="More News">
+                    <article class="hero-article hero-article-lower">
+                        <figure class="hero-article-lower-figure">
+                            <img src="https://placehold.co/559x314/666/fff?text=More+News+Hero" alt="More News Hero"
+                                width="559" height="314" loading="lazy">
+                        </figure>
+                        <h2>Aenean vulputate eleifend tellus aenean leo ligula porttitor eu consequat</h2>
+                        <p class="author author-spaced">By <span>Lorem Ipsum</span></p>
+
+                        <ul class="article-bullets article-bullets-spaced">
+                            <li><a href="#">Phasellus viverra nulla ut metus varius laoreet quisque rutrum aenean
+                                    imperdiet</a></li>
+                            <li><a href="#">Etiam ultricies nisi vel augue curabitur ullamcorper ultricies nisi nam eget
+                                    dui</a></li>
+                        </ul>
+                    </article>
+
+                    <article class="hero-article hero-article-lower">
+                        <figure class="hero-article-lower-figure">
+                            <img src="https://placehold.co/559x314/888/fff?text=Courts+Gavel" alt="Courts Gavel"
+                                width="559" height="314" loading="lazy">
+                        </figure>
+                        <h2>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero</h2>
+                        <p class="author author-spaced">By <span>Lorem Ipsum</span></p>
+
+                        <ul class="article-bullets article-bullets-spaced">
+                            <li><a href="#">Donec quam felis ultricies nec pellentesque eu pretium quis sem</a></li>
+                            <li><a href="#">Nulla consequat massa quis enim donec pede justo fringilla vel aliquet</a>
+                            </li>
+                            <li><a href="#">In enim justo rhoncus ut imperdiet a venenatis vitae justo nullam dictum
+                                    felis</a></li>
+                            <li><a href="#">Sed consequat leo eget bibendum sodales augue velit cursus nunc</a></li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- COLONNA DESTRA -->
+                <aside class="col-right" aria-label="Side News">
+
+                    <article class="latest-item lower-article">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/300x200/444/fff?text=News+Image+1" alt="News Image 1"
+                                width="300" height="200" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Vivamus elementum
+                            semper nisi aenean vulputate eleifend tellus aenean leo ligula</h3>
+                    </article>
+
+                    <article class="latest-item lower-article">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/300x200/222/fff?text=News+Image+2" alt="News Image 2"
+                                width="300" height="200" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Phasellus viverra
+                            nulla ut metus varius laoreet quisque rutrum</h3>
+                    </article>
+
+                    <article class="latest-item lower-article">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/300x200/666/fff?text=News+Image+3" alt="News Image 3"
+                                width="300" height="200" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Nullam quis ante
+                            etiam sit amet orci eget eros faucibus tincidunt duis leo</h3>
+                    </article>
+
+                    <article class="latest-item lower-article">
+                        <figure class="hero-article-img lower-article-figure">
+                            <img src="https://placehold.co/300x200/333/fff?text=News+Image+4" alt="News Image 4"
+                                width="300" height="200" loading="lazy" class="lower-article-img">
+                        </figure>
+                        <h3 class="lower-article-title">Praesent congue
+                            erat at massa sed cursus turpis vitae sagittis dignissim</h3>
+                    </article>
+
+                </aside>
+
+            </div> <!-- Fine blocco 3 colonne inferiore -->
+
+            <!-- ==========================================
      SEZIONE WHEELS (Full width)
      ========================================== -->
-        <section class="wheels-section">
-            <div class="wheels-outer">
-                <div class="wheels-header">
-                    <h2>Wheels</h2>
-                </div>
+            <section class="wheels-section">
+                <div class="wheels-outer">
+                    <div class="wheels-header">
+                        <h2>Wheels</h2>
+                    </div>
 
-                <div class="wheels-viewport">
-                    <!-- Navigation Arrows -->
-                    <button class="wheels-nav-btn wheels-prev" aria-label="Previous Wheel">&#10094;</button>
-                    <button class="wheels-nav-btn wheels-next" aria-label="Next Wheel">&#10095;</button>
+                    <div class="wheels-viewport">
+                        <!-- Navigation Arrows -->
+                        <button class="wheels-nav-btn wheels-prev" aria-label="Previous Wheel">&#10094;</button>
+                        <button class="wheels-nav-btn wheels-next" aria-label="Next Wheel">&#10095;</button>
 
-                    <div class="wheels-track">
-                        <!-- ITEM 1 -->
-                        <article class="wheels-card">
-                            <figure class="wheels-img">
-                                <img src="https://placehold.co/313x182/448cff/fff?text=Car+1" alt="Blue Kicks"
-                                    width="313" height="182" loading="lazy">
-                            </figure>
-                            <div class="wheels-content">
-                                <h3>
-                                    Lorem ipsum dolor sit amet consectetur adipiscing</h3>
-                                <p>Sed
-                                    ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudan...</p>
-                                <p class="wheels-date">Mar 16, 2026 9:00 PM</p>
-                            </div>
-                        </article>
+                        <div class="wheels-track">
+                            <!-- ITEM 1 -->
+                            <article class="wheels-card">
+                                <figure class="wheels-img">
+                                    <img src="https://placehold.co/313x182/448cff/fff?text=Car+1" alt="Blue Kicks"
+                                        width="313" height="182" loading="lazy">
+                                </figure>
+                                <div class="wheels-content">
+                                    <h3>
+                                        Lorem ipsum dolor sit amet consectetur adipiscing</h3>
+                                    <p>Sed
+                                        ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque laudan...</p>
+                                    <p class="wheels-date">Mar 16, 2026 9:00 PM</p>
+                                </div>
+                            </article>
 
-                        <!-- ITEM 2 -->
-                        <article class="wheels-card">
-                            <figure class="wheels-img">
-                                <img src="https://placehold.co/313x182/8c8c8c/fff?text=Engine" alt="Chevy Engine"
-                                    width="313" height="182" loading="lazy">
-                            </figure>
-                            <div class="wheels-content">
-                                <h3>
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur</h3>
-                                <p>Neque
-                                    porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur
-                                    adipisci veli...</p>
-                                <p class="wheels-date">Mar 12, 2026 3:51 PM</p>
-                            </div>
-                        </article>
+                            <!-- ITEM 2 -->
+                            <article class="wheels-card">
+                                <figure class="wheels-img">
+                                    <img src="https://placehold.co/313x182/8c8c8c/fff?text=Engine" alt="Chevy Engine"
+                                        width="313" height="182" loading="lazy">
+                                </figure>
+                                <div class="wheels-content">
+                                    <h3>
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur</h3>
+                                    <p>Neque
+                                        porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur
+                                        adipisci veli...</p>
+                                    <p class="wheels-date">Mar 12, 2026 3:51 PM</p>
+                                </div>
+                            </article>
 
-                        <!-- ITEM 3 -->
-                        <article class="wheels-card">
-                            <figure class="wheels-img">
-                                <img src="https://placehold.co/313x182/9b2734/fff?text=Red+Range+Rover" alt="Red SUV"
-                                    width="313" height="182" loading="lazy">
-                            </figure>
-                            <div class="wheels-content">
-                                <h3>
-                                    Ut enim ad minima veniam quis nostrum exercitationem...</h3>
-                                <p>Quis
-                                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                                    molestiae conse...</p>
-                                <p class="wheels-date">Apr 13, 2026 9:00 PM</p>
-                            </div>
-                        </article>
+                            <!-- ITEM 3 -->
+                            <article class="wheels-card">
+                                <figure class="wheels-img">
+                                    <img src="https://placehold.co/313x182/9b2734/fff?text=Red+Range+Rover"
+                                        alt="Red SUV" width="313" height="182" loading="lazy">
+                                </figure>
+                                <div class="wheels-content">
+                                    <h3>
+                                        Ut enim ad minima veniam quis nostrum exercitationem...</h3>
+                                    <p>Quis
+                                        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                                        molestiae conse...</p>
+                                    <p class="wheels-date">Apr 13, 2026 9:00 PM</p>
+                                </div>
+                            </article>
 
-                        <!-- ITEM 4 -->
-                        <article class="wheels-card">
-                            <figure class="wheels-img">
-                                <img src="https://placehold.co/313x182/c9343a/fff?text=Red+Kia" alt="Red Kia EV"
-                                    width="313" height="182" loading="lazy">
-                            </figure>
-                            <div class="wheels-content">
-                                <h3>
-                                    At vero eos et accusamus et iusto odio dignissimos</h3>
-                                <p>
-                                    Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit
-                                    quo minus id qu...</p>
-                                <p class="wheels-date">Apr 6, 2026 9:00 PM</p>
-                            </div>
-                        </article>
+                            <!-- ITEM 4 -->
+                            <article class="wheels-card">
+                                <figure class="wheels-img">
+                                    <img src="https://placehold.co/313x182/c9343a/fff?text=Red+Kia" alt="Red Kia EV"
+                                        width="313" height="182" loading="lazy">
+                                </figure>
+                                <div class="wheels-content">
+                                    <h3>
+                                        At vero eos et accusamus et iusto odio dignissimos</h3>
+                                    <p>
+                                        Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit
+                                        quo minus id qu...</p>
+                                    <p class="wheels-date">Apr 6, 2026 9:00 PM</p>
+                                </div>
+                            </article>
 
-                        <article class="wheels-card">
-                            <figure class="wheels-img">
-                                <img src="https://placehold.co/313x182/444/fff?text=Item+5" alt="Item 5" width="313"
-                                    height="182" loading="lazy">
-                            </figure>
-                            <div class="wheels-content">
-                                <h3>
-                                    Temporibus autem quibusdam et aut officiis debitis</h3>
-                                <p>
-                                    Et harum quidem rerum facilis est et expedita distinctio nam libero tempore
-                                    cum soluta nob...</p>
-                                <p class="wheels-date">Apr 5, 2026 2:15 PM</p>
-                            </div>
-                        </article>
+                            <article class="wheels-card">
+                                <figure class="wheels-img">
+                                    <img src="https://placehold.co/313x182/444/fff?text=Item+5" alt="Item 5" width="313"
+                                        height="182" loading="lazy">
+                                </figure>
+                                <div class="wheels-content">
+                                    <h3>
+                                        Temporibus autem quibusdam et aut officiis debitis</h3>
+                                    <p>
+                                        Et harum quidem rerum facilis est et expedita distinctio nam libero tempore
+                                        cum soluta nob...</p>
+                                    <p class="wheels-date">Apr 5, 2026 2:15 PM</p>
+                                </div>
+                            </article>
 
-                        <article class="wheels-card">
-                            <figure class="wheels-img">
-                                <img src="https://placehold.co/313x182/333/fff?text=Item+6" alt="Item 6" width="313"
-                                    height="182" loading="lazy">
-                            </figure>
-                            <div class="wheels-content">
-                                <h3>
-                                    Itaque earum rerum hic tenetur a sapiente delectus</h3>
-                                <p>
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
-                                    sed quia conseq...</p>
-                                <p class="wheels-date">Apr 2, 2026 10:30 AM</p>
-                            </div>
-                        </article>
+                            <article class="wheels-card">
+                                <figure class="wheels-img">
+                                    <img src="https://placehold.co/313x182/333/fff?text=Item+6" alt="Item 6" width="313"
+                                        height="182" loading="lazy">
+                                </figure>
+                                <div class="wheels-content">
+                                    <h3>
+                                        Itaque earum rerum hic tenetur a sapiente delectus</h3>
+                                    <p>
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+                                        sed quia conseq...</p>
+                                    <p class="wheels-date">Apr 2, 2026 10:30 AM</p>
+                                </div>
+                            </article>
 
-                        <article class="wheels-card">
-                            <figure class="wheels-img">
-                                <img src="https://placehold.co/313x182/222/fff?text=Item+7" alt="Item 7" width="313"
-                                    height="182" loading="lazy">
-                            </figure>
-                            <div class="wheels-content">
-                                <h3>
-                                    Similique sunt in culpa qui officia deserunt mollitia</h3>
-                                <p>Omnis
-                                    voluptas assumenda est omnis dolor repellendus temporibus autem quibusdam et aut
-                                    officiis debi...</p>
-                                <p class="wheels-date">Mar 28, 2026 4:45 PM</p>
-                            </div>
-                        </article>
+                            <article class="wheels-card">
+                                <figure class="wheels-img">
+                                    <img src="https://placehold.co/313x182/222/fff?text=Item+7" alt="Item 7" width="313"
+                                        height="182" loading="lazy">
+                                </figure>
+                                <div class="wheels-content">
+                                    <h3>
+                                        Similique sunt in culpa qui officia deserunt mollitia</h3>
+                                    <p>Omnis
+                                        voluptas assumenda est omnis dolor repellendus temporibus autem quibusdam et aut
+                                        officiis debi...</p>
+                                    <p class="wheels-date">Mar 28, 2026 4:45 PM</p>
+                                </div>
+                            </article>
 
-                        <article class="wheels-card">
-                            <figure class="wheels-img">
-                                <img src="https://placehold.co/313x182/111/fff?text=Item+8" alt="Item 8" width="313"
-                                    height="182" loading="lazy">
-                            </figure>
-                            <div class="wheels-content">
-                                <h3>
-                                    Quis autem vel eum iure reprehenderit qui in ea volup...</h3>
-                                <p>
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque lauda...</p>
-                                <p class="wheels-date">Mar 25, 2026 8:00 AM</p>
-                            </div>
-                        </article>
+                            <article class="wheels-card">
+                                <figure class="wheels-img">
+                                    <img src="https://placehold.co/313x182/111/fff?text=Item+8" alt="Item 8" width="313"
+                                        height="182" loading="lazy">
+                                </figure>
+                                <div class="wheels-content">
+                                    <h3>
+                                        Quis autem vel eum iure reprehenderit qui in ea volup...</h3>
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque lauda...</p>
+                                    <p class="wheels-date">Mar 25, 2026 8:00 AM</p>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-    </main>
+        </main>
 
-    <!-- ========== FOOTER ========== -->
-    <footer class="site-footer">
-        <div class="footer-main">
+        <!-- ========== FOOTER ========== -->
+        <footer class="site-footer">
+            <div class="footer-main">
 
-            <!-- Scritta Logo / Brand -->
-            <div class="footer-brand" aria-label="Logo testuale">
-                <span class="logo-shaw">SHAW</span>
-                <span class="logo-local">MEDIA</span>
-            </div>
-
-            <div class="footer-grid">
-                <!-- Colonna 1: About Us -->
-                <div class="footer-col">
-                    <h3>About us</h3>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Jobs at Lorem Media</a></li>
-                        <li><a href="#">Lorem Media Marketing</a></li>
-                        <li><a href="#">Advertise with Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
+                <!-- Scritta Logo / Brand -->
+                <div class="footer-brand" aria-label="Logo testuale">
+                    <span class="logo-shaw">SHAW</span>
+                    <span class="logo-local">MEDIA</span>
                 </div>
 
-                <!-- Colonna 2: Subscriptions -->
-                <div class="footer-col">
-                    <h3>Subscriptions</h3>
-                    <ul>
-                        <li><a href="#">Subscribe</a></li>
-                        <li><a href="#">Manage your Subscription</a></li>
-                        <li><a href="#">Newsletters</a></li>
-                    </ul>
-                </div>
-
-                <!-- Colonna 3: More -->
-                <div class="footer-col">
-                    <h3>More on ipsum</h3>
-                    <ul>
-                        <li><a href="#">Classifieds</a></li>
-                        <li><a href="#">Public Notices</a></li>
-                        <li><a href="#">Obituaries</a></li>
-                        <li><a href="#">Historical Archive</a></li>
-                    </ul>
-                </div>
-
-                <!-- Colonna 4: Mobile App -->
-                <div class="footer-col">
-                    <h3>Mobile app</h3>
-                    <ul>
-                        <li><a href="#">iOS</a></li>
-                        <li><a href="#">Android</a></li>
-                    </ul>
-                </div>
-
-                <!-- Colonna 5: Social -->
-                <div class="footer-col">
-                    <h3>Follow us</h3>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Visita la nostra pagina Facebook">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Visita il nostro profilo X (Twitter)">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-                                <path
-                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Visita il nostro profilo Instagram">
-                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                            </svg>
-                        </a>
+                <div class="footer-grid">
+                    <!-- Colonna 1: About Us -->
+                    <div class="footer-col">
+                        <h3>About us</h3>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Jobs at Lorem Media</a></li>
+                            <li><a href="#">Lorem Media Marketing</a></li>
+                            <li><a href="#">Advertise with Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
                     </div>
+
+                    <!-- Colonna 2: Subscriptions -->
+                    <div class="footer-col">
+                        <h3>Subscriptions</h3>
+                        <ul>
+                            <li><a href="#">Subscribe</a></li>
+                            <li><a href="#">Manage your Subscription</a></li>
+                            <li><a href="#">Newsletters</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Colonna 3: More -->
+                    <div class="footer-col">
+                        <h3>More on ipsum</h3>
+                        <ul>
+                            <li><a href="#">Classifieds</a></li>
+                            <li><a href="#">Public Notices</a></li>
+                            <li><a href="#">Obituaries</a></li>
+                            <li><a href="#">Historical Archive</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Colonna 4: Mobile App -->
+                    <div class="footer-col">
+                        <h3>Mobile app</h3>
+                        <ul>
+                            <li><a href="#">iOS</a></li>
+                            <li><a href="#">Android</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Colonna 5: Social -->
+                    <div class="footer-col">
+                        <h3>Follow us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Visita la nostra pagina Facebook">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Visita il nostro profilo X (Twitter)">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Visita il nostro profilo Instagram">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                                    stroke-width="2" aria-hidden="true">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Barra Copyright Inferiore -->
+                <div class="footer-bottom">
+                    <p>Copyright &copy; 2026 Lorem Ipsum Media Group</p>
                 </div>
 
             </div>
+        </footer>
 
-            <!-- Barra Copyright Inferiore -->
-            <div class="footer-bottom">
-                <p>Copyright &copy; 2026 Lorem Ipsum Media Group</p>
-            </div>
-
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-
+        <script src="script.js"></script>
+    </div>
 </body>
 
 </html>
