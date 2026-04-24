@@ -10,12 +10,19 @@
 
         prevBtn.addEventListener('click', function () {
             let scrollAmount = track.clientWidth;
-            if (container.classList.contains('obits-slider')) {
+            let isObits = container.classList.contains('obits-slider');
+            
+            if (isObits) {
                 const item = track.firstElementChild;
                 if (item) {
                     const style = window.getComputedStyle(track);
                     const gap = parseFloat(style.gap) || 0;
                     scrollAmount = item.offsetWidth + gap;
+                }
+                
+                if (track.scrollLeft <= 0) {
+                    track.scrollTo({ left: track.scrollWidth, behavior: 'smooth' });
+                    return;
                 }
             }
             track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
@@ -23,12 +30,19 @@
 
         nextBtn.addEventListener('click', function () {
             let scrollAmount = track.clientWidth;
-            if (container.classList.contains('obits-slider')) {
+            let isObits = container.classList.contains('obits-slider');
+            
+            if (isObits) {
                 const item = track.firstElementChild;
                 if (item) {
                     const style = window.getComputedStyle(track);
                     const gap = parseFloat(style.gap) || 0;
                     scrollAmount = item.offsetWidth + gap;
+                }
+                
+                if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 1) {
+                    track.scrollTo({ left: 0, behavior: 'smooth' });
+                    return;
                 }
             }
             track.scrollBy({ left: scrollAmount, behavior: 'smooth' });

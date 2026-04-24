@@ -13,7 +13,6 @@ body {
     padding-top: 66px;
     background-color: #ffffff;
     color: #191919;
-    overflow-x: hidden;
 }
 
 button,
@@ -24,7 +23,6 @@ select {
 .site-wrapper {
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
     /* Questo blocca al 100% qualsiasi sbavatura su mobile */
     position: relative;
 }
@@ -433,9 +431,15 @@ select {
     margin-bottom: 0.5rem;
 }
 
+.article-text,
 .article-thumb {
-    flex: 0 0 271px;
-    max-width: 100%;
+    flex: 1 1 50%;
+    max-width: calc(50% - 0.75rem); /* gap is 1.5rem, so half of it is subtracted */
+}
+
+.article-thumb {
+    /* Base styles for thumb if needed, but flex is handled above */
+    display: block;
 }
 
 .article-thumb img {
@@ -465,27 +469,13 @@ select {
 }
 
 /* --- Effetto Hover per le immagini (solo opacity) --- */
-.hero-article img,
-.article-thumb img,
-.sponsored-figure img,
-.ad-container img,
-.featured-article img,
-.sidebar-thumb img,
-.gallery-card img,
-.trending-thumb img {
+img:not(header img) {
     transition: opacity 0.3s ease;
     cursor: pointer;
     border-radius: 2px;
 }
 
-.hero-article img:hover,
-.article-thumb img:hover,
-.sponsored-figure img:hover,
-.ad-container img:hover,
-.featured-article img:hover,
-.sidebar-thumb img:hover,
-.gallery-card img:hover,
-.trending-thumb img:hover {
+img:not(header img):hover {
     opacity: 0.8;
 }
 
@@ -695,11 +685,11 @@ select {
     flex-grow: 1;
     justify-content: space-between;
     align-items: center;
-    overflow-x: auto;
-    overflow-y: hidden;
-    /* Blocca scorrimento verticale che causa le freccette scrollbar */
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 20px; /* Spinge gli elementi a capo ben fuori dall'area visibile */
+    max-height: 40px;
+    overflow: hidden;
 }
 
 .dates-track::-webkit-scrollbar {
@@ -713,6 +703,8 @@ select {
     cursor: pointer;
     line-height: 1.1;
     color: #666;
+    flex-shrink: 0;
+    min-width: 35px;
 }
 
 .day-name {
@@ -1240,16 +1232,17 @@ select {
     }
 
     .three-col-layout {
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: auto minmax(0, 1fr) auto;
         gap: 0;
         align-items: start;
     }
 
     .col-left {
         padding-right: 0;
+        position: -webkit-sticky;
         position: sticky;
         top: 90px;
-        height: fit-content;
+        align-self: start;
         width: 300px;
         margin-right: 20px;
     }
@@ -1263,9 +1256,10 @@ select {
 
     .col-right {
         padding-left: 0;
+        position: -webkit-sticky;
         position: sticky;
         top: 90px;
-        height: fit-content;
+        align-self: start;
         width: 300px;
         margin-left: 20px;
     }
@@ -1302,6 +1296,11 @@ select {
         gap: 0 3rem;
     }
 
+    /* Obituaries: 4 cards on full screen */
+    .obit-card {
+        flex: 0 0 calc((100% / 4) - 10.5px);
+        width: calc((100% / 4) - 10.5px);
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1798,8 +1797,6 @@ select {
     align-items: center;
     max-width: 1140px;
     margin: 0 auto;
-    overflow: hidden;
-    /* ← AGGIUNGI QUESTA */
 }
 
 .obituaries-title {
@@ -1817,7 +1814,8 @@ select {
 
 .obits-track {
     max-width: 1042px;
-    width: 100%;
+    flex: 1;
+    min-width: 0;
 }
 
 /* -- Obituaries "View All" button -- */
@@ -1831,6 +1829,7 @@ select {
 .obits-view-all-btn {
     margin-top: 1rem;
     margin-right: 0;
+    transform: translateX(60%);
     width: 188px;
     height: 48px;
     background-color: #162b75;
@@ -1977,21 +1976,18 @@ html,
 body {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
-.obituaries-section,
-.obituaries-inner,
 .obits-slider {
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
 }
 
 .events-track.obits-track {
     overflow-x: auto;
     overflow-y: hidden;
-    width: 100%;
+    flex: 1;
     max-width: 100%;
     min-width: 0;
 }
