@@ -187,7 +187,8 @@ select {
 
 .icon-btn:hover {
     background: transparent;
-    opacity: 1;
+    opacity: 0.8;
+    cursor: pointer;
     transform: none;
     box-shadow: none;
 }
@@ -263,6 +264,7 @@ select {
 .nav-link {
     color: #191919;
     font-size: 1rem;
+    font-weight: bold;
     text-decoration: none;
     transition: opacity 0.2s ease;
     display: inline-block;
@@ -405,6 +407,11 @@ select {
     font-weight: 600;
 }
 
+.author span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .top-stories-header {
     margin: 2.5rem 0 1.5rem 0;
 }
@@ -475,7 +482,7 @@ img:not(header img) {
     border-radius: 2px;
 }
 
-img:not(header img):hover {
+img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad-container-sticky img):hover {
     opacity: 0.8;
 }
 
@@ -486,7 +493,10 @@ img:not(header img):hover {
 .featured-article h3,
 .sidebar-article h3,
 .gallery-card h3,
-.trending-item h3 {
+.trending-item h3,
+.sponsored-item h3,
+.lower-article-title,
+.widget-heroes-text {
     transition: opacity 0.2s ease;
     cursor: pointer;
 }
@@ -497,7 +507,10 @@ img:not(header img):hover {
 .featured-article h3:hover,
 .sidebar-article h3:hover,
 .gallery-card h3:hover,
-.trending-item h3:hover {
+.trending-item h3:hover,
+.sponsored-item h3:hover,
+.lower-article-title:hover,
+.widget-heroes-text:hover {
     opacity: 0.65;
 }
 
@@ -1104,7 +1117,7 @@ img:not(header img):hover {
 .footer-col ul li a:hover,
 .footer-col ul li a:focus-visible {
     color: #162b75;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Icone Social */
