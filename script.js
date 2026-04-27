@@ -135,6 +135,32 @@
                 };
                 track.addEventListener('transitionend', onEnd);
             });
+
+            // =========================================
+            // TOUCH SUPPORT (SWIPE)
+            // =========================================
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            track.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            track.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, { passive: true });
+
+            function handleSwipe() {
+                const swipeThreshold = 50; // Minimum distance for a swipe
+                if (touchEndX < touchStartX - swipeThreshold) {
+                    // Swipe Left -> Next item
+                    nextBtn.click();
+                } else if (touchEndX > touchStartX + swipeThreshold) {
+                    // Swipe Right -> Previous item
+                    prevBtn.click();
+                }
+            }
         }
     }
 })();
