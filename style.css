@@ -2138,3 +2138,19 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
     color: #555555;
     margin: auto 0 0 0;
 }
+
+/* -- MOBILE WHEELS RESPONSIVENESS -- */
+/* Rimossa variazione a 50% per mantenere 4 cards fino a 500px */
+
+@media screen and (max-width: 499px) {
+    .wheels-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        border-right: none;
+    }
+
+    .wheels-nav-btn {
+        display: none;
+        /* Hide arrows on small mobile, rely on swipe */
+    }
+}
