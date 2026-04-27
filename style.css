@@ -8,6 +8,13 @@
 }
 
 
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     padding-top: 66px;
@@ -141,9 +148,10 @@ select {
 }
 
 .logo-badge {
-    background-color: #d09c37;
-    color: #162b75;
+    color: #ffffff;
+    background-color: #162b75;
     padding: 4px 8px;
+    border: 1px solid #ffffff;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -157,12 +165,14 @@ select {
 }
 
 .badge-text {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     font-weight: 800;
 }
 
 .badge-sub {
-    font-size: 0.7rem;
+    color: #d09c37;
+    font-size: 0.45rem;
+    letter-spacing: 1px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -371,6 +381,7 @@ select {
 /* -- Colonna Centrale Articoli -- */
 .hero-article {
     margin-bottom: 2rem;
+    margin-top: 10px;
 }
 
 .hero-article img {
@@ -1168,9 +1179,7 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
     }
 }
 
-/* =========================================
-   OBITUARIES CARDS
-   ========================================= */
+/* -- OBITUARIES CARDS -- */
 .obit-card {
     flex: 0 0 250px;
     width: 250px;
@@ -1502,44 +1511,7 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
         height: 56px;
     }
 
-    /* Fix Everyday Heroes image size - aggiungo .col-right per avere specificità maggiore del blocco 1024px */
-    .col-right .widget-heroes-container {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        width: auto !important;
-    }
 
-    .col-right .widget-heroes-img {
-        max-width: 100% !important;
-        height: 380px !important;
-        object-fit: cover !important;
-    }
-
-    /* Schiaccia l'immagine Let's Play Illinois in altezza, larghezza 50% e rimuovi hover */
-    .col-right .ad-container-sticky {
-        text-align: left !important;
-    }
-
-    .col-right .ad-container-sticky img {
-        height: 160px !important;
-        object-fit: cover !important;
-        width: 50% !important;
-        margin: 0 !important;
-    }
-
-    .col-right .ad-container-sticky img:hover {
-        opacity: 1 !important;
-    }
-
-    /* A — sempre 4 */
-    .wheels-card {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-
-    .wheels-card .wheels-img {
-        width: 100%;
-    }
 }
 
 /* =========================================
@@ -1655,6 +1627,7 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+    border: #000000 3px solid;
 }
 
 .top-ad-banner img {
@@ -1670,7 +1643,7 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
 
 /* -- Griglia inferiore (seconda e terza) -- */
 .three-col-layout-lower {
-    margin-top: 2.5rem;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -1797,10 +1770,12 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
     border-radius: 2px;
 }
 
-/* -- Obituaries Section -- */
+/* =========================================
+   OBITUARIES SECTION
+   ========================================= */
 .obituaries-section {
     margin-top: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 10px;
     max-width: 1337px;
     margin-left: auto;
     margin-right: auto;
@@ -1859,7 +1834,160 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
     font-size: 0.9rem;
 }
 
-/* -- Wheels Section -- */
+
+.obits-slider {
+    width: 100%;
+    max-width: 100%;
+}
+
+.events-track.obits-track {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex: 1;
+    max-width: 100%;
+    min-width: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .slider-container.obits-slider {
+        gap: 0;
+    }
+
+    .slider-container.obits-slider .slider-btn {
+        display: none;
+    }
+
+    .events-track.obits-track {
+        padding: 0;
+    }
+
+    .obit-card {
+        flex: 0 0 220px;
+        width: 220px;
+    }
+}
+
+/* -- REGOLE SLIDER NECROLOGI -- */
+
+/* 1. Dimensioni sempre fisse per le cards e gap */
+.events-track.obits-track {
+    display: flex;
+    gap: 14px !important;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.obit-card {
+    flex: 0 0 250px !important;
+    width: 250px !important;
+    max-width: 250px !important;
+}
+
+/* 2. Setup del bottone sfalsato verso destra e ADATTIVO */
+.obits-view-all-wrapper {
+    display: flex;
+    justify-content: flex-end !important;
+    margin: 0 auto;
+}
+
+.obits-view-all-btn {
+    position: relative !important;
+    transform: none !important;
+    /* Rimuoviamo il vecchio transform */
+    margin-right: 0 !important;
+    margin-top: 1rem;
+
+    /* LA MAGIA MATEMATICA È QUI:
+     - 113px: è esattamente il 60% (i 3/5 che sporgono) della larghezza fissa del bottone (188px).
+     - calc(50vw - 50% - 20px): calcola l'esatto spazio libero millimetrico dal bordo del carosello fino al limite destro dello schermo.
+     - min(): applica i 113px finché c'è spazio fisico. Se la finestra si stringe, usa il calcolo per rientrare dinamicamente ed evitare il taglio.
+  */
+    left: min(113px, calc(50vw - 50% - 20px)) !important;
+}
+
+/* -- BREAKPOINT OBITUARIES -- */
+
+/* Desktop (Da 4 cards in su) */
+@media screen and (min-width: 1148px) {
+
+    .slider-container.obits-slider,
+    .events-track.obits-track,
+    .obits-view-all-wrapper {
+        max-width: 1042px !important;
+    }
+}
+
+/* Da 4 a 3 cards (sotto i 1148px) */
+@media screen and (max-width: 1147px) {
+
+    .slider-container.obits-slider,
+    .events-track.obits-track,
+    .obits-view-all-wrapper {
+        max-width: 778px !important;
+    }
+}
+
+/* Da 3 a 2 cards (sotto gli 870px) */
+@media screen and (max-width: 869px) {
+
+    .slider-container.obits-slider,
+    .events-track.obits-track,
+    .obits-view-all-wrapper {
+        max-width: 514px !important;
+    }
+}
+
+/* Da 2 a 1 card (sotto i 586px) */
+@media screen and (max-width: 585px) {
+
+    .slider-container.obits-slider,
+    .events-track.obits-track,
+    .obits-view-all-wrapper {
+        max-width: 250px !important;
+    }
+
+    .events-track.obits-track {
+        padding: 0 !important;
+    }
+}
+
+/* -- FRECCE OBITUARIES -- */
+
+.slider-container.obits-slider {
+    position: relative;
+    /* Recinto fondamentale per le frecce */
+    margin: 0 auto;
+}
+
+.slider-container.obits-slider .slider-btn {
+    position: absolute;
+    top: 50%;
+    /* Modificato: calcola automaticamente la metà esatta dell'intera card */
+    transform: translateY(-50%);
+    /* Mantiene la freccia perfettamente in asse sul punto centrale */
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+/* Le spinge ai lati, facendole sbordare un po' sulle foto */
+.slider-container.obits-slider .prev-btn {
+    left: 15px;
+}
+
+.slider-container.obits-slider .next-btn {
+    right: 15px;
+}
+
+/* =========================================
+   WHEELS SECTION
+   ========================================= */
 .wheels-section {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -2013,167 +2141,4 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
     font-size: 0.75rem;
     color: #555555;
     margin: auto 0 0 0;
-}
-
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: clip;
-}
-
-.obits-slider {
-    width: 100%;
-    max-width: 100%;
-}
-
-.events-track.obits-track {
-    overflow-x: auto;
-    overflow-y: hidden;
-    flex: 1;
-    max-width: 100%;
-    min-width: 0;
-}
-
-@media screen and (max-width: 767px) {
-    .slider-container.obits-slider {
-        gap: 0;
-    }
-
-    .slider-container.obits-slider .slider-btn {
-        display: none;
-    }
-
-    .events-track.obits-track {
-        padding: 0;
-    }
-
-    .obit-card {
-        flex: 0 0 220px;
-        width: 220px;
-    }
-}
-
-/* =======================================================
-   RESET E NUOVE REGOLE SLIDER NECROLOGI (DIMENSIONI FISSE)
-   ======================================================= */
-
-/* 1. Dimensioni sempre fisse per le cards e gap */
-.events-track.obits-track {
-    display: flex;
-    gap: 14px !important;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.obit-card {
-    flex: 0 0 250px !important;
-    width: 250px !important;
-    max-width: 250px !important;
-}
-
-/* 2. Setup del bottone sfalsato verso destra e ADATTIVO */
-.obits-view-all-wrapper {
-    display: flex;
-    justify-content: flex-end !important;
-    margin: 0 auto;
-}
-
-.obits-view-all-btn {
-    position: relative !important;
-    transform: none !important;
-    /* Rimuoviamo il vecchio transform */
-    margin-right: 0 !important;
-    margin-top: 1rem;
-
-    /* LA MAGIA MATEMATICA È QUI:
-     - 113px: è esattamente il 60% (i 3/5 che sporgono) della larghezza fissa del bottone (188px).
-     - calc(50vw - 50% - 20px): calcola l'esatto spazio libero millimetrico dal bordo del carosello fino al limite destro dello schermo.
-     - min(): applica i 113px finché c'è spazio fisico. Se la finestra si stringe, usa il calcolo per rientrare dinamicamente ed evitare il taglio.
-  */
-    left: min(113px, calc(50vw - 50% - 20px)) !important;
-}
-
-/* =======================================================
-   3. BREAKPOINT ESATTI RICHIESTI
-   ======================================================= */
-
-/* Desktop (Da 4 cards in su) */
-@media screen and (min-width: 1148px) {
-
-    .slider-container.obits-slider,
-    .events-track.obits-track,
-    .obits-view-all-wrapper {
-        max-width: 1042px !important;
-    }
-}
-
-/* Da 4 a 3 cards (sotto i 1148px) */
-@media screen and (max-width: 1147px) {
-
-    .slider-container.obits-slider,
-    .events-track.obits-track,
-    .obits-view-all-wrapper {
-        max-width: 778px !important;
-    }
-}
-
-/* Da 3 a 2 cards (sotto gli 870px) */
-@media screen and (max-width: 869px) {
-
-    .slider-container.obits-slider,
-    .events-track.obits-track,
-    .obits-view-all-wrapper {
-        max-width: 514px !important;
-    }
-}
-
-/* Da 2 a 1 card (sotto i 586px) */
-@media screen and (max-width: 585px) {
-
-    .slider-container.obits-slider,
-    .events-track.obits-track,
-    .obits-view-all-wrapper {
-        max-width: 250px !important;
-    }
-
-    .events-track.obits-track {
-        padding: 0 !important;
-    }
-}
-
-/* =======================================================
-   AGGIUNTA: FRECCE DELLO SLIDER SOVRAPPOSTE
-   ======================================================= */
-
-.slider-container.obits-slider {
-    position: relative;
-    /* Recinto fondamentale per le frecce */
-    margin: 0 auto;
-}
-
-.slider-container.obits-slider .slider-btn {
-    position: absolute;
-    top: 50%;
-    /* Modificato: calcola automaticamente la metà esatta dell'intera card */
-    transform: translateY(-50%);
-    /* Mantiene la freccia perfettamente in asse sul punto centrale */
-    background-color: #ffffff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    z-index: 10;
-}
-
-/* Le spinge ai lati, facendole sbordare un po' sulle foto */
-.slider-container.obits-slider .prev-btn {
-    left: 15px;
-}
-
-.slider-container.obits-slider .next-btn {
-    right: 15px;
 }
