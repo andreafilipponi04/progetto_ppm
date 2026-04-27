@@ -2044,7 +2044,7 @@ body {
     max-width: 250px !important;
 }
 
-/* 2. Setup del bottone sfalsato verso destra */
+/* 2. Setup del bottone sfalsato verso destra e ADATTIVO */
 .obits-view-all-wrapper {
     display: flex;
     justify-content: flex-end !important;
@@ -2052,12 +2052,18 @@ body {
 }
 
 .obits-view-all-btn {
-    /* Sposta il bottone verso destra della sua stessa dimensione.
-     Con 60% sporgerà in modo che circa i 2/5 del bottone (40%) rimangano 
-     coperti dall'ultima card in colonna, e il resto vada oltre il limite. */
-    transform: translateX(60%) !important;
+    position: relative !important;
+    transform: none !important;
+    /* Rimuoviamo il vecchio transform */
     margin-right: 0 !important;
     margin-top: 1rem;
+
+    /* LA MAGIA MATEMATICA È QUI:
+     - 113px: è esattamente il 60% (i 3/5 che sporgono) della larghezza fissa del bottone (188px).
+     - calc(50vw - 50% - 20px): calcola l'esatto spazio libero millimetrico dal bordo del carosello fino al limite destro dello schermo.
+     - min(): applica i 113px finché c'è spazio fisico. Se la finestra si stringe, usa il calcolo per rientrare dinamicamente ed evitare il taglio.
+  */
+    left: min(113px, calc(50vw - 50% - 20px)) !important;
 }
 
 /* =======================================================
@@ -2101,12 +2107,5 @@ body {
 
     .events-track.obits-track {
         padding: 0 !important;
-    }
-
-    /* Opzionale: Su mobile potresti voler annullare o ridurre lo sbordamento 
-     se causa problemi di scorrimento orizzontale della pagina intera. 
-     Se vuoi mantenerlo identico, elimina questa riga sotto. */
-    .obits-view-all-btn {
-        transform: none !important;
     }
 }
