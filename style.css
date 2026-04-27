@@ -1531,9 +1531,10 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
         opacity: 1 !important;
     }
 
+    /* A — sempre 4 */
     .wheels-card {
-        flex: 0 0 calc(100% - 20px);
-        max-width: calc(100% - 20px);
+        flex: 0 0 25%;
+        max-width: 25%;
     }
 
     .wheels-card .wheels-img {
@@ -1903,28 +1904,51 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
 
 .wheels-nav-btn {
     position: absolute;
-    top: 35%;
+    top: 50%;
+    /* Metà esatta dell'intera card */
     transform: translateY(-50%);
     z-index: 10;
-    background: rgba(255, 255, 255, 0.85);
-    border: 1px solid #ccc;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    background: transparent;
+    border: none;
+    width: 30px;
+    /* Più strette */
+    height: 50px;
+    /* Più basse */
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    font-size: 1.2rem;
+    font-size: 2.5rem;
+    /* Dimensione del font ridotta rispetto a prima */
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+    /* Inizialmente nascoste a livello globale (opzionale se vuoi che non si vedano finché non sei sul contenitore) */
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /* Transizione solo per l'opacità, non si muove o ingrandisce */
+}
+
+/* Quando entri nello slider, le frecce diventano visibili ma semitrasparenti */
+.wheels-viewport:hover .wheels-nav-btn {
+    opacity: 0.4;
+    /* Più trasparenti: usa un valore tra 0.3 e 0.5 a piacere */
+    visibility: visible;
+}
+
+/* Quando il mouse passa direttamente SOPRA la freccia */
+.wheels-viewport:hover .wheels-nav-btn:hover {
+    opacity: 1;
 }
 
 .wheels-prev {
-    left: 10px;
+    left: 3px;
 }
 
 .wheels-next {
-    right: 10px;
+    right: 3px;
 }
 
 .wheels-track {
@@ -1934,19 +1958,23 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
     margin: 0;
 }
 
+/* A */
 .wheels-card {
-    flex: 0 0 313px;
-    max-width: 313px;
-    height: 308px;
+    flex: 0 0 25%;
+    max-width: 25%;
+    min-height: 328px;
+    height: auto;
+    max-height: 460px;
     display: flex;
     flex-direction: column;
     border-right: 1px solid #dcdcdc;
     box-sizing: border-box;
 }
 
+/* A */
 .wheels-card .wheels-img {
     margin: 0;
-    width: 313px;
+    width: 100%;
     max-width: 100%;
     height: 182px;
 }
