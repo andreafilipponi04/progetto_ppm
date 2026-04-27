@@ -2073,6 +2073,7 @@ body {
 /* Desktop (Da 4 cards in su) */
 @media screen and (min-width: 1148px) {
 
+    .slider-container.obits-slider,
     .events-track.obits-track,
     .obits-view-all-wrapper {
         max-width: 1042px !important;
@@ -2082,6 +2083,7 @@ body {
 /* Da 4 a 3 cards (sotto i 1148px) */
 @media screen and (max-width: 1147px) {
 
+    .slider-container.obits-slider,
     .events-track.obits-track,
     .obits-view-all-wrapper {
         max-width: 778px !important;
@@ -2091,6 +2093,7 @@ body {
 /* Da 3 a 2 cards (sotto gli 870px) */
 @media screen and (max-width: 869px) {
 
+    .slider-container.obits-slider,
     .events-track.obits-track,
     .obits-view-all-wrapper {
         max-width: 514px !important;
@@ -2100,6 +2103,7 @@ body {
 /* Da 2 a 1 card (sotto i 586px) */
 @media screen and (max-width: 585px) {
 
+    .slider-container.obits-slider,
     .events-track.obits-track,
     .obits-view-all-wrapper {
         max-width: 250px !important;
@@ -2108,4 +2112,40 @@ body {
     .events-track.obits-track {
         padding: 0 !important;
     }
+}
+
+/* =======================================================
+   AGGIUNTA: FRECCE DELLO SLIDER SOVRAPPOSTE
+   ======================================================= */
+
+.slider-container.obits-slider {
+    position: relative;
+    /* Recinto fondamentale per le frecce */
+    margin: 0 auto;
+}
+
+.slider-container.obits-slider .slider-btn {
+    position: absolute;
+    top: 50%;
+    /* Modificato: calcola automaticamente la metà esatta dell'intera card */
+    transform: translateY(-50%);
+    /* Mantiene la freccia perfettamente in asse sul punto centrale */
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+/* Le spinge ai lati, facendole sbordare un po' sulle foto */
+.slider-container.obits-slider .prev-btn {
+    left: 15px;
+}
+
+.slider-container.obits-slider .next-btn {
+    right: 15px;
 }
