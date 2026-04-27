@@ -54,7 +54,7 @@ select {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9;
+    z-index: 999;
     transition: 0.5s;
 }
 
@@ -1211,11 +1211,6 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.obit-card:hover img {
-    transform: scale(1.03);
 }
 
 .obit-card .obit-content {
