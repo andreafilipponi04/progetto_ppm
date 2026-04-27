@@ -441,7 +441,8 @@ select {
 .article-text,
 .article-thumb {
     flex: 1 1 50%;
-    max-width: calc(50% - 0.75rem); /* gap is 1.5rem, so half of it is subtracted */
+    max-width: calc(50% - 0.75rem);
+    /* gap is 1.5rem, so half of it is subtracted */
 }
 
 .article-thumb {
@@ -700,7 +701,8 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
     align-items: center;
     align-content: flex-start;
     flex-wrap: wrap;
-    row-gap: 20px; /* Spinge gli elementi a capo ben fuori dall'area visibile */
+    row-gap: 20px;
+    /* Spinge gli elementi a capo ben fuori dall'area visibile */
     max-height: 40px;
     overflow: hidden;
 }
@@ -2021,5 +2023,90 @@ body {
     .obit-card {
         flex: 0 0 220px;
         width: 220px;
+    }
+}
+
+/* =======================================================
+   RESET E NUOVE REGOLE SLIDER NECROLOGI (DIMENSIONI FISSE)
+   ======================================================= */
+
+/* 1. Dimensioni sempre fisse per le cards e gap */
+.events-track.obits-track {
+    display: flex;
+    gap: 14px !important;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.obit-card {
+    flex: 0 0 250px !important;
+    width: 250px !important;
+    max-width: 250px !important;
+}
+
+/* 2. Setup del bottone sfalsato verso destra */
+.obits-view-all-wrapper {
+    display: flex;
+    justify-content: flex-end !important;
+    margin: 0 auto;
+}
+
+.obits-view-all-btn {
+    /* Sposta il bottone verso destra della sua stessa dimensione.
+     Con 60% sporgerà in modo che circa i 2/5 del bottone (40%) rimangano 
+     coperti dall'ultima card in colonna, e il resto vada oltre il limite. */
+    transform: translateX(60%) !important;
+    margin-right: 0 !important;
+    margin-top: 1rem;
+}
+
+/* =======================================================
+   3. BREAKPOINT ESATTI RICHIESTI
+   ======================================================= */
+
+/* Desktop (Da 4 cards in su) */
+@media screen and (min-width: 1148px) {
+
+    .events-track.obits-track,
+    .obits-view-all-wrapper {
+        max-width: 1042px !important;
+    }
+}
+
+/* Da 4 a 3 cards (sotto i 1148px) */
+@media screen and (max-width: 1147px) {
+
+    .events-track.obits-track,
+    .obits-view-all-wrapper {
+        max-width: 778px !important;
+    }
+}
+
+/* Da 3 a 2 cards (sotto gli 870px) */
+@media screen and (max-width: 869px) {
+
+    .events-track.obits-track,
+    .obits-view-all-wrapper {
+        max-width: 514px !important;
+    }
+}
+
+/* Da 2 a 1 card (sotto i 586px) */
+@media screen and (max-width: 585px) {
+
+    .events-track.obits-track,
+    .obits-view-all-wrapper {
+        max-width: 250px !important;
+    }
+
+    .events-track.obits-track {
+        padding: 0 !important;
+    }
+
+    /* Opzionale: Su mobile potresti voler annullare o ridurre lo sbordamento 
+     se causa problemi di scorrimento orizzontale della pagina intera. 
+     Se vuoi mantenerlo identico, elimina questa riga sotto. */
+    .obits-view-all-btn {
+        transform: none !important;
     }
 }
