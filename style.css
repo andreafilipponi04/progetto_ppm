@@ -162,7 +162,7 @@ select {
 }
 
 .badge-sub {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -195,7 +195,7 @@ select {
 
 .btn-subscribe {
     background-color: #d09c37;
-    color: #ffffff;
+    color: #FFFFFF;
     border: none;
     padding: 0 1rem;
     height: 100%;
@@ -321,7 +321,7 @@ select {
 .latest-item time {
     display: block;
     font-size: 0.8rem;
-    color: #64748b;
+    color: #333333;
     margin-bottom: 0.2rem;
 }
 
@@ -353,9 +353,9 @@ select {
     position: absolute;
     bottom: 5px;
     left: 5px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     padding: 2px 6px;
     font-weight: bold;
     letter-spacing: 0.5px;
@@ -398,7 +398,7 @@ select {
 
 .author {
     font-size: 0.8rem;
-    color: #64748b;
+    color: #333333;
     text-transform: uppercase;
 }
 
@@ -638,9 +638,9 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #eee;
-    font-size: 11px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 13px;
     padding: 0 0 0 2px;
     z-index: 1;
     display: block;
@@ -717,7 +717,7 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
     align-items: center;
     cursor: pointer;
     line-height: 1.1;
-    color: #666;
+    color: #444444;
     flex-shrink: 0;
     min-width: 35px;
 }
@@ -1933,7 +1933,7 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
 
 /* Quando entri nello slider, le frecce diventano visibili ma semitrasparenti */
 .wheels-viewport:hover .wheels-nav-btn {
-    opacity: 0.4;
+    opacity: 0.6;
     /* Più trasparenti: usa un valore tra 0.3 e 0.5 a piacere */
     visibility: visible;
 }
@@ -2011,7 +2011,7 @@ img:not(header img, .obit-img-wrapper img, .event-card img, .wheels-img img, .ad
 
 .wheels-content .wheels-date {
     font-size: 0.75rem;
-    color: #777;
+    color: #555555;
     margin: auto 0 0 0;
 }
 
